@@ -1,0 +1,2226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3045">
+              <caret line="271" selection-start-line="271" selection-end-line="276" />
+              <folding>
+                <element signature="e#100#164#0" />
+                <element signature="e#205#341#0" />
+                <element signature="e#381#511#0" />
+                <element signature="e#556#696#0" />
+                <element signature="e#747#1885#0" />
+                <element signature="e#795#1563#0" />
+                <element signature="e#856#924#0" />
+                <element signature="e#1013#1081#0" />
+                <element signature="e#1187#1255#0" />
+                <element signature="e#1330#1398#0" />
+                <element signature="e#1425#1563#0" />
+                <element signature="e#1927#9637#0" />
+                <element signature="e#2332#5665#0" />
+                <element signature="e#2532#2902#0" />
+                <element signature="e#2656#2835#0" />
+                <element signature="e#3060#3272#0" />
+                <element signature="e#3406#3714#0" />
+                <element signature="e#3530#3647#0" />
+                <element signature="e#3875#4129#0" />
+                <element signature="e#4297#4515#0" />
+                <element signature="e#4647#4880#0" />
+                <element signature="e#5038#5327#0" />
+                <element signature="e#5460#5665#0" />
+                <element signature="e#5907#9574#0" />
+                <element signature="e#6086#6334#0" />
+                <element signature="e#6489#6736#0" />
+                <element signature="e#6890#7098#0" />
+                <element signature="e#7225#7433#0" />
+                <element signature="e#7586#7809#0" />
+                <element signature="e#7938#8386#0" />
+                <element signature="e#8062#8319#0" />
+                <element signature="e#8547#8840#0" />
+                <element signature="e#8968#9214#0" />
+                <element signature="e#9367#9574#0" />
+                <element signature="e#9683#10101#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="754">
+              <caret line="52" column="32" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="32" />
+              <folding>
+                <element signature="e#100#164#0" />
+                <element signature="e#205#341#0" />
+                <element signature="e#381#511#0" />
+                <element signature="e#556#696#0" />
+                <element signature="e#856#924#0" />
+                <element signature="e#1013#1081#0" />
+                <element signature="e#1187#1255#0" />
+                <element signature="e#1330#1398#0" />
+                <element signature="e#6693#6850#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainV1.0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5191">
+              <caret line="183" column="30" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21837">
+              <caret line="759" column="22" lean-forward="true" selection-start-line="759" selection-start-column="22" selection-end-line="759" selection-end-column="22" />
+              <folding>
+                <element signature="e#2656#2835#0" />
+                <element signature="e#3530#3647#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7540">
+              <caret line="559" column="11" lean-forward="true" selection-start-line="559" selection-start-column="11" selection-end-line="559" selection-end-column="11" />
+              <folding>
+                <element signature="e#100#164#0" />
+                <element signature="e#205#341#0" />
+                <element signature="e#381#511#0" />
+                <element signature="e#556#696#0" />
+                <element signature="e#747#1885#0" />
+                <element signature="e#795#1563#0" />
+                <element signature="e#856#924#0" />
+                <element signature="e#1013#1081#0" />
+                <element signature="e#1187#1255#0" />
+                <element signature="e#1330#1398#0" />
+                <element signature="e#1425#1563#0" />
+                <element signature="e#1927#9637#0" />
+                <element signature="e#2332#5665#0" />
+                <element signature="e#2532#2902#0" />
+                <element signature="e#2656#2835#0" />
+                <element signature="e#3060#3272#0" />
+                <element signature="e#3406#3714#0" />
+                <element signature="e#3530#3647#0" />
+                <element signature="e#3875#4129#0" />
+                <element signature="e#4297#4515#0" />
+                <element signature="e#4647#4880#0" />
+                <element signature="e#5038#5327#0" />
+                <element signature="e#5460#5665#0" />
+                <element signature="e#5907#9574#0" />
+                <element signature="e#6086#6334#0" />
+                <element signature="e#6489#6736#0" />
+                <element signature="e#6890#7098#0" />
+                <element signature="e#7225#7433#0" />
+                <element signature="e#7586#7809#0" />
+                <element signature="e#7938#8386#0" />
+                <element signature="e#8062#8319#0" />
+                <element signature="e#8547#8840#0" />
+                <element signature="e#8968#9214#0" />
+                <element signature="e#9367#9574#0" />
+                <element signature="e#9683#10101#0" />
+                <element signature="e#10155#10373#0" />
+                <element signature="e#10398#10628#0" />
+                <element signature="e#10411#10439#0" />
+                <element signature="e#10493#10562#0" />
+                <element signature="e#10679#10990#0" />
+                <element signature="e#10711#10990#0" />
+                <element signature="e#11039#11330#0" />
+                <element signature="e#11071#11330#0" />
+                <element signature="e#11383#11562#0" />
+                <element signature="e#11414#11562#0" />
+                <element signature="e#11620#12005#0" />
+                <element signature="e#11698#11801#0" />
+                <element signature="e#11902#12005#0" />
+                <element signature="e#12071#12470#0" />
+                <element signature="e#12334#12382#0" />
+                <element signature="e#12387#12432#0" />
+                <element signature="e#12522#12627#0" />
+                <element signature="e#12672#12783#0" />
+                <element signature="e#12835#12938#0" />
+                <element signature="e#13237#13460#0" />
+                <element signature="e#13506#13729#0" />
+                <element signature="e#13775#13994#0" />
+                <element signature="e#14039#14262#0" />
+                <element signature="e#14304#14339#0" />
+                <element signature="e#14469#14831#0" />
+                <element signature="e#14836#14917#0" />
+                <element signature="e#15018#15539#0" />
+                <element signature="e#16269#16695#0" />
+                <element signature="e#16466#16661#0" />
+                <element signature="e#16772#16930#0" />
+                <element signature="e#16985#17464#0" />
+                <element signature="e#17497#18002#0" />
+                <element signature="e#18235#18337#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV9.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3016">
+              <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
+              <folding>
+                <element signature="e#100#164#0" />
+                <element signature="e#193#347#0" />
+                <element signature="e#375#506#0" />
+                <element signature="e#545#1566#0" />
+                <element signature="e#593#1357#0" />
+                <element signature="e#663#740#0" />
+                <element signature="e#838#915#0" />
+                <element signature="e#1030#1107#0" />
+                <element signature="e#1191#1268#0" />
+                <element signature="e#1596#4747#0" />
+                <element signature="e#1889#3204#0" />
+                <element signature="e#1931#2179#0" />
+                <element signature="e#2193#3204#0" />
+                <element signature="e#2235#3168#0" />
+                <element signature="e#3380#4725#0" />
+                <element signature="e#3422#3655#0" />
+                <element signature="e#3669#4725#0" />
+                <element signature="e#3711#4689#0" />
+                <element signature="e#4781#5414#0" />
+                <element signature="e#4904#5138#0" />
+                <element signature="e#5265#5296#0" />
+                <element signature="e#5456#5690#0" />
+                <element signature="e#5715#5945#0" />
+                <element signature="e#5728#5756#0" />
+                <element signature="e#5810#5879#0" />
+                <element signature="e#5984#6344#0" />
+                <element signature="e#6016#6344#0" />
+                <element signature="e#6381#6613#0" />
+                <element signature="e#6407#6613#0" />
+                <element signature="e#6654#6860#0" />
+                <element signature="e#6685#6860#0" />
+                <element signature="e#6906#7327#0" />
+                <element signature="e#6984#7105#0" />
+                <element signature="e#7206#7327#0" />
+                <element signature="e#7373#7782#0" />
+                <element signature="e#7574#7699#0" />
+                <element signature="e#7709#7766#0" />
+                <element signature="e#7822#7928#0" />
+                <element signature="e#7961#8101#0" />
+                <element signature="e#8553#8776#0" />
+                <element signature="e#8822#9045#0" />
+                <element signature="e#9091#9310#0" />
+                <element signature="e#9355#9578#0" />
+                <element signature="e#9620#9655#0" />
+                <element signature="e#9785#10147#0" />
+                <element signature="e#10152#10233#0" />
+                <element signature="e#10334#10648#0" />
+                <element signature="e#10710#11291#0" />
+                <element signature="e#10770#11002#0" />
+                <element signature="e#10819#11002#0" />
+                <element signature="e#10878#11002#0" />
+                <element signature="e#11059#11291#0" />
+                <element signature="e#11108#11291#0" />
+                <element signature="e#11167#11291#0" />
+                <element signature="e#11296#11305#0" />
+                <element signature="e#11451#11854#0" />
+                <element signature="e#11652#11820#0" />
+                <element signature="e#11908#11978#0" />
+                <element signature="e#12033#12512#0" />
+                <element signature="e#12545#13050#0" />
+                <element signature="e#13283#13385#0" />
+                <element signature="e#14968#15123#0" />
+                <element signature="e#18095#20756#0" />
+                <element signature="e#20100#20756#0" />
+                <element signature="e#20163#20705#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="58">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#100#164#0" />
+                <element signature="e#193#347#0" />
+                <element signature="e#375#506#0" />
+                <element signature="e#545#1566#0" />
+                <element signature="e#593#1357#0" />
+                <element signature="e#663#740#0" />
+                <element signature="e#838#915#0" />
+                <element signature="e#1030#1107#0" />
+                <element signature="e#1191#1268#0" />
+                <element signature="e#1596#4747#0" />
+                <element signature="e#1889#3204#0" />
+                <element signature="e#1931#2179#0" />
+                <element signature="e#2193#3204#0" />
+                <element signature="e#2235#3168#0" />
+                <element signature="e#3380#4725#0" />
+                <element signature="e#3422#3655#0" />
+                <element signature="e#3669#4725#0" />
+                <element signature="e#3711#4689#0" />
+                <element signature="e#4781#5410#0" />
+                <element signature="e#4904#5138#0" />
+                <element signature="e#5261#5292#0" />
+                <element signature="e#5628#5858#0" />
+                <element signature="e#5641#5669#0" />
+                <element signature="e#5723#5792#0" />
+                <element signature="e#5897#6257#0" />
+                <element signature="e#5929#6257#0" />
+                <element signature="e#6294#6526#0" />
+                <element signature="e#6320#6526#0" />
+                <element signature="e#6567#6773#0" />
+                <element signature="e#6598#6773#0" />
+                <element signature="e#6819#7240#0" />
+                <element signature="e#6897#7018#0" />
+                <element signature="e#7119#7240#0" />
+                <element signature="e#7278#7408#0" />
+                <element signature="e#7448#7554#0" />
+                <element signature="e#7587#7727#0" />
+                <element signature="e#7767#7880#0" />
+                <element signature="e#7956#10990#0" />
+                <element signature="e#8179#8402#0" />
+                <element signature="e#8448#8671#0" />
+                <element signature="e#8717#8936#0" />
+                <element signature="e#8981#9204#0" />
+                <element signature="e#9246#9281#0" />
+                <element signature="e#9411#9773#0" />
+                <element signature="e#9778#9859#0" />
+                <element signature="e#9960#10274#0" />
+                <element signature="e#10336#10917#0" />
+                <element signature="e#10396#10628#0" />
+                <element signature="e#10445#10628#0" />
+                <element signature="e#10504#10628#0" />
+                <element signature="e#10685#10917#0" />
+                <element signature="e#10734#10917#0" />
+                <element signature="e#10793#10917#0" />
+                <element signature="e#10922#10931#0" />
+                <element signature="e#11077#11480#0" />
+                <element signature="e#11278#11446#0" />
+                <element signature="e#11534#11604#0" />
+                <element signature="e#11639#11801#0" />
+                <element signature="e#11713#11801#0" />
+                <element signature="e#11856#12335#0" />
+                <element signature="e#12368#12873#0" />
+                <element signature="e#14714#20829#0" />
+                <element signature="e#14913#15237#0" />
+                <element signature="e#15135#15237#0" />
+                <element signature="e#15256#20829#0" />
+                <element signature="e#15355#20829#0" />
+                <element signature="e#15401#17869#0" />
+                <element signature="e#16201#16350#0" />
+                <element signature="e#16476#16632#0" />
+                <element signature="e#17155#17869#0" />
+                <element signature="e#17281#17823#0" />
+                <element signature="e#17904#20829#0" />
+                <element signature="e#18490#18653#0" />
+                <element signature="e#18787#18946#0" />
+                <element signature="e#19104#19257#0" />
+                <element signature="e#19320#19486#0" />
+                <element signature="e#19547#19698#0" />
+                <element signature="e#19765#19915#0" />
+                <element signature="e#20173#20829#0" />
+                <element signature="e#20236#20778#0" />
+                <element signature="e#22214#22336#0" />
+                <element signature="e#22404#24595#0" />
+                <element signature="e#22627#22850#0" />
+                <element signature="e#22896#23115#0" />
+                <element signature="e#23160#23383#0" />
+                <element signature="e#23581#23844#0" />
+                <element signature="e#23849#23930#0" />
+                <element signature="e#24031#24345#0" />
+                <element signature="e#24391#24558#0" />
+                <element signature="e#24442#24558#0" />
+                <element signature="e#26988#30969#0" />
+                <element signature="e#27349#27539#0" />
+                <element signature="e#27400#27501#0" />
+                <element signature="e#27614#27825#0" />
+                <element signature="e#27665#27773#0" />
+                <element signature="e#27897#28099#0" />
+                <element signature="e#27948#28053#0" />
+                <element signature="e#28180#28409#0" />
+                <element signature="e#28231#28345#0" />
+                <element signature="e#28477#28667#0" />
+                <element signature="e#28528#28629#0" />
+                <element signature="e#28734#28921#0" />
+                <element signature="e#28785#28885#0" />
+                <element signature="e#29061#29219#0" />
+                <element signature="e#29229#29440#0" />
+                <element signature="e#29280#29388#0" />
+                <element signature="e#29596#29807#0" />
+                <element signature="e#29647#29755#0" />
+                <element signature="e#29947#29978#0" />
+                <element signature="e#29988#30199#0" />
+                <element signature="e#30039#30147#0" />
+                <element signature="e#30339#30366#0" />
+                <element signature="e#30376#30587#0" />
+                <element signature="e#30427#30535#0" />
+                <element signature="e#30727#30748#0" />
+                <element signature="e#30758#30969#0" />
+                <element signature="e#30809#30917#0" />
+                <element signature="e#33338#33462#0" />
+                <element signature="e#33530#35721#0" />
+                <element signature="e#33753#33976#0" />
+                <element signature="e#34022#34241#0" />
+                <element signature="e#34286#34509#0" />
+                <element signature="e#34707#34970#0" />
+                <element signature="e#34975#35056#0" />
+                <element signature="e#35157#35471#0" />
+                <element signature="e#35517#35684#0" />
+                <element signature="e#35568#35684#0" />
+                <element signature="e#38176#42195#0" />
+                <element signature="e#38538#38730#0" />
+                <element signature="e#38589#38691#0" />
+                <element signature="e#38806#39019#0" />
+                <element signature="e#38857#38966#0" />
+                <element signature="e#39092#39296#0" />
+                <element signature="e#39143#39249#0" />
+                <element signature="e#39378#39609#0" />
+                <element signature="e#39429#39544#0" />
+                <element signature="e#39678#39870#0" />
+                <element signature="e#39729#39831#0" />
+                <element signature="e#39938#40127#0" />
+                <element signature="e#39989#40090#0" />
+                <element signature="e#40269#40427#0" />
+                <element signature="e#40437#40650#0" />
+                <element signature="e#40488#40597#0" />
+                <element signature="e#40808#41021#0" />
+                <element signature="e#40859#40968#0" />
+                <element signature="e#41163#41194#0" />
+                <element signature="e#41204#41417#0" />
+                <element signature="e#41255#41364#0" />
+                <element signature="e#41559#41586#0" />
+                <element signature="e#41596#41809#0" />
+                <element signature="e#41647#41756#0" />
+                <element signature="e#41951#41972#0" />
+                <element signature="e#41982#42195#0" />
+                <element signature="e#42033#42142#0" />
+                <element signature="e#44667#45047#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/pack/PackFilesLocal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1276">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/udf/UDF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="667">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+              <folding>
+                <element signature="e#58#122#0" />
+                <element signature="e#163#299#0" />
+                <element signature="e#339#469#0" />
+                <element signature="e#520#1647#0" />
+                <element signature="e#568#1325#0" />
+                <element signature="e#629#697#0" />
+                <element signature="e#786#854#0" />
+                <element signature="e#960#1028#0" />
+                <element signature="e#1103#1171#0" />
+                <element signature="e#1198#1325#0" />
+                <element signature="e#1689#5869#0" />
+                <element signature="e#1952#3732#0" />
+                <element signature="e#2022#2257#0" />
+                <element signature="e#2344#2441#0" />
+                <element signature="e#2522#2695#0" />
+                <element signature="e#2785#2925#0" />
+                <element signature="e#3022#3125#0" />
+                <element signature="e#3204#3323#0" />
+                <element signature="e#3410#3562#0" />
+                <element signature="e#3642#3732#0" />
+                <element signature="e#3893#5847#0" />
+                <element signature="e#3970#4103#0" />
+                <element signature="e#4187#4319#0" />
+                <element signature="e#4402#4495#0" />
+                <element signature="e#4569#4662#0" />
+                <element signature="e#4744#4852#0" />
+                <element signature="e#4928#5220#0" />
+                <element signature="e#5310#5466#0" />
+                <element signature="e#5541#5673#0" />
+                <element signature="e#5755#5847#0" />
+                <element signature="e#5915#6429#0" />
+                <element signature="e#6155#6186#0" />
+                <element signature="e#6278#6379#0" />
+                <element signature="e#6481#6697#0" />
+                <element signature="e#6722#6952#0" />
+                <element signature="e#6735#6763#0" />
+                <element signature="e#6817#6886#0" />
+                <element signature="e#7003#7266#0" />
+                <element signature="e#7035#7266#0" />
+                <element signature="e#7315#7567#0" />
+                <element signature="e#7347#7567#0" />
+                <element signature="e#7620#7799#0" />
+                <element signature="e#7651#7799#0" />
+                <element signature="e#7857#8242#0" />
+                <element signature="e#7935#8038#0" />
+                <element signature="e#8139#8242#0" />
+                <element signature="e#8306#8690#0" />
+                <element signature="e#8554#8602#0" />
+                <element signature="e#8607#8652#0" />
+                <element signature="e#8742#8847#0" />
+                <element signature="e#8892#9003#0" />
+                <element signature="e#9055#9158#0" />
+                <element signature="e#9234#12390#0" />
+                <element signature="e#9457#9680#0" />
+                <element signature="e#9726#9949#0" />
+                <element signature="e#9995#10214#0" />
+                <element signature="e#10259#10482#0" />
+                <element signature="e#10524#10559#0" />
+                <element signature="e#10689#11051#0" />
+                <element signature="e#11056#11137#0" />
+                <element signature="e#11238#11759#0" />
+                <element signature="e#11777#12317#0" />
+                <element signature="e#11822#12041#0" />
+                <element signature="e#11871#12041#0" />
+                <element signature="e#11917#12041#0" />
+                <element signature="e#12098#12317#0" />
+                <element signature="e#12147#12317#0" />
+                <element signature="e#12193#12317#0" />
+                <element signature="e#12490#12916#0" />
+                <element signature="e#12687#12882#0" />
+                <element signature="e#12993#13151#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.0.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>replace(' ','')</find>
+      <find>, 'Sales_MKT'</find>
+      <find>str(df_summary_fcst[header_std[1]][idx_row])</find>
+      <find>str(df_summary_actual[header_std[1]][idx_row])</find>
+      <find>MKT Launch</find>
+      <find>APAC CC</find>
+      <find>Customer Service</find>
+      <find>'Sales MKT'</find>
+      <find>['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team', 'West Region Team', 'ZheJiang Region Team']</find>
+      <find>'Internal Fleet Car'</find>
+      <find>National Sales</find>
+      <find>'NBD Team</find>
+      <find>df_fcst</find>
+      <find>path1</find>
+      <find>file_summary</find>
+      <find>path2</find>
+      <find>file_summary2</find>
+      <find>=</find>
+      <find>&quot;D:/ASP - Erin/Raw Data/&quot;</find>
+      <find>&quot;D:/ASP - Erin/FCST/Data&amp;Log/&quot;</find>
+      <find>&quot;D:/ASP - Erin/Actual/Data&amp;Log/&quot;</find>
+      <find>&quot;D:/ASP - Erin/Header Error/Files/&quot;</find>
+      <find>D:/ASP - Erin/</find>
+      <find>320</find>
+      <find>24</find>
+      <find>[col_idx + 24</find>
+      <find>col_idx + 28</find>
+      <find>col_idx + 32</find>
+      <find>df_summary_fcst</find>
+      <find>pass</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/com.xinpeng/test/Test.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/ExcelProcessing.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/ExcelProcessingV2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/utils/StandardMapping.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPData.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV3.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test/TestFile.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV4.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test/test.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeam.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV3.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV3.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV4.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV5.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV6.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV7.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV8.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.1.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/main.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV9.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/zip/PackFiles.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPReCheckingLocal.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/pack/PackFiles.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMain.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPReChecking.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/pack/PackFilesLocal.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/udf/__init__.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocal.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/udf/UDF.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/PathDict.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/vdict" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/aspdict.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainV1.0.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="795" />
+    <option name="width" value="1113" />
+    <option name="height" value="1007" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="false" />
+      <showExcludedFiles Scope="true" ProjectPane="true" />
+      <autoscrollToSource ProjectPane="false" />
+      <autoscrollFromSource ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+              <item name="udf" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="D:/PycharmProjects" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\main" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\rechecking" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\pack" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp dept" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\udf" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\test" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\rechecking" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp dept" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.ASPMainLocalV0.2">
+    <configuration name="ASPMainLocalV0.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ASPMainLocalV0.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ASPMainLocalV1.0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ASPMainLocalV1.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="aspdict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/aspdict.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.ASPMainLocalV0.2" />
+        <item itemvalue="Python.ASPMainLocalV0.1" />
+        <item itemvalue="Python.ASPMainLocalV1.1" />
+        <item itemvalue="Python.ASPMainLocalV1.0" />
+        <item itemvalue="Python.aspdict" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="" />
+      <created>1565589350258</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565589350258</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12580082" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928312" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854398" weight="0.31105712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399757" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32928312" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501456" side_tool="true" weight="0.3620899" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32928312" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/xlsxwriter/workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/email/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/idlelib/outwin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/xlsxwriter/worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="402" column="49" lean-forward="true" selection-start-line="402" selection-start-column="49" selection-end-line="402" selection-end-column="49" />
+          <folding>
+            <element signature="e#230#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2552">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
+          <folding>
+            <element signature="e#70#224#0" />
+            <element signature="e#263#755#0" />
+            <element signature="e#785#3776#0" />
+            <element signature="e#965#1213#0" />
+            <element signature="e#1269#2202#0" />
+            <element signature="e#2349#2399#0" />
+            <element signature="e#2451#2684#0" />
+            <element signature="e#2740#3718#0" />
+            <element signature="e#3818#4020#0" />
+            <element signature="e#4459#4572#0" />
+            <element signature="e#4865#5088#0" />
+            <element signature="e#5134#5357#0" />
+            <element signature="e#5403#5622#0" />
+            <element signature="e#7012#7290#0" />
+            <element signature="e#6956#7435#0" />
+            <element signature="e#7449#7954#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+          <folding>
+            <element signature="e#70#224#0" />
+            <element signature="e#263#1328#0" />
+            <element signature="e#881#1311#0" />
+            <element signature="e#919#1188#0" />
+            <element signature="e#1358#3191#0" />
+            <element signature="e#1496#2243#0" />
+            <element signature="e#1692#2243#0" />
+            <element signature="e#2405#3169#0" />
+            <element signature="e#2584#3169#0" />
+            <element signature="e#3224#3487#0" />
+            <element signature="e#3366#3466#0" />
+            <element signature="e#3526#3871#0" />
+            <element signature="e#3558#3871#0" />
+            <element signature="e#3911#4024#0" />
+            <element signature="e#4060#4539#0" />
+            <element signature="e#4553#5058#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+          <folding>
+            <element signature="e#58#1048#0" />
+            <element signature="e#1078#1464#0" />
+            <element signature="e#1776#2255#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1537">
+          <caret line="53" column="45" selection-start-line="53" selection-start-column="45" selection-end-line="53" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/shutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="230" column="4" selection-start-line="230" selection-start-column="4" selection-end-line="230" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#956#1559#0" />
+            <element signature="e#1750#5928#0" />
+            <element signature="e#2324#2425#0" />
+            <element signature="e#2452#5894#0" />
+            <element signature="e#6195#6641#0" />
+            <element signature="e#6771#7185#0" />
+            <element signature="e#7132#7419#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/io/excel/_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1918">
+          <caret line="643" column="13" lean-forward="true" selection-start-line="643" selection-start-column="13" selection-end-line="643" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-625">
+          <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="282" column="54" selection-start-line="282" selection-start-column="54" selection-end-line="282" selection-end-column="54" />
+          <folding>
+            <element signature="e#84#148#0" />
+            <element signature="e#177#331#0" />
+            <element signature="e#13451#13911#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="269" column="43" lean-forward="true" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
+          <folding>
+            <element signature="e#84#148#0" />
+            <element signature="e#177#331#0" />
+            <element signature="e#370#1534#0" />
+            <element signature="e#418#1182#0" />
+            <element signature="e#488#565#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#855#932#0" />
+            <element signature="e#1016#1093#0" />
+            <element signature="e#1379#1392#0" />
+            <element signature="e#1564#4595#0" />
+            <element signature="e#1698#1727#0" />
+            <element signature="e#1737#3052#0" />
+            <element signature="e#1779#2027#0" />
+            <element signature="e#2041#3052#0" />
+            <element signature="e#2083#3016#0" />
+            <element signature="e#3228#4573#0" />
+            <element signature="e#3270#3503#0" />
+            <element signature="e#3517#4573#0" />
+            <element signature="e#3559#4537#0" />
+            <element signature="e#4637#4867#0" />
+            <element signature="e#4906#5266#0" />
+            <element signature="e#4938#5266#0" />
+            <element signature="e#5307#5513#0" />
+            <element signature="e#5338#5513#0" />
+            <element signature="e#5559#5931#0" />
+            <element signature="e#5637#5758#0" />
+            <element signature="e#5810#5931#0" />
+            <element signature="e#7028#7134#0" />
+            <element signature="e#7167#7307#0" />
+            <element signature="e#7347#7460#0" />
+            <element signature="e#7536#10570#0" />
+            <element signature="e#7759#7982#0" />
+            <element signature="e#8028#8251#0" />
+            <element signature="e#8297#8516#0" />
+            <element signature="e#8561#8784#0" />
+            <element signature="e#8826#8861#0" />
+            <element signature="e#8991#9353#0" />
+            <element signature="e#9358#9439#0" />
+            <element signature="e#9540#9854#0" />
+            <element signature="e#9916#10497#0" />
+            <element signature="e#9976#10208#0" />
+            <element signature="e#10025#10208#0" />
+            <element signature="e#10084#10208#0" />
+            <element signature="e#10265#10497#0" />
+            <element signature="e#10314#10497#0" />
+            <element signature="e#10373#10497#0" />
+            <element signature="e#10502#10511#0" />
+            <element signature="e#10657#10985#0" />
+            <element signature="e#10858#10951#0" />
+            <element signature="e#11040#11519#0" />
+            <element signature="e#11552#12057#0" />
+            <element signature="e#13867#14022#0" />
+            <element signature="e#14459#14603#0" />
+            <element signature="e#15197#15344#0" />
+            <element signature="e#16309#16814#0" />
+            <element signature="e#17069#17570#0" />
+            <element signature="e#17781#18287#0" />
+            <element signature="e#18529#18990#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2320">
+          <caret line="289" column="38" lean-forward="true" selection-start-line="289" selection-start-column="38" selection-end-line="289" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV7.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="364" column="19" selection-start-line="364" selection-start-column="19" selection-end-line="364" selection-end-column="19" />
+          <folding>
+            <element signature="e#84#148#0" />
+            <element signature="e#177#331#0" />
+            <element signature="e#370#1534#0" />
+            <element signature="e#418#1182#0" />
+            <element signature="e#488#565#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#855#932#0" />
+            <element signature="e#1016#1093#0" />
+            <element signature="e#1564#4595#0" />
+            <element signature="e#1737#3052#0" />
+            <element signature="e#1779#2027#0" />
+            <element signature="e#2041#3052#0" />
+            <element signature="e#2083#3016#0" />
+            <element signature="e#3228#4573#0" />
+            <element signature="e#3270#3503#0" />
+            <element signature="e#3517#4573#0" />
+            <element signature="e#3559#4537#0" />
+            <element signature="e#4637#4867#0" />
+            <element signature="e#4906#5266#0" />
+            <element signature="e#4938#5266#0" />
+            <element signature="e#5307#5513#0" />
+            <element signature="e#5338#5513#0" />
+            <element signature="e#5559#5968#0" />
+            <element signature="e#5637#5758#0" />
+            <element signature="e#5847#5968#0" />
+            <element signature="e#6014#6382#0" />
+            <element signature="e#6084#6209#0" />
+            <element signature="e#6244#6301#0" />
+            <element signature="e#6422#6528#0" />
+            <element signature="e#6561#6701#0" />
+            <element signature="e#6741#6854#0" />
+            <element signature="e#6930#9964#0" />
+            <element signature="e#7153#7376#0" />
+            <element signature="e#7422#7645#0" />
+            <element signature="e#7691#7910#0" />
+            <element signature="e#7955#8178#0" />
+            <element signature="e#8220#8255#0" />
+            <element signature="e#8385#8747#0" />
+            <element signature="e#8752#8833#0" />
+            <element signature="e#8934#9248#0" />
+            <element signature="e#9310#9891#0" />
+            <element signature="e#9370#9602#0" />
+            <element signature="e#9419#9602#0" />
+            <element signature="e#9478#9602#0" />
+            <element signature="e#9659#9891#0" />
+            <element signature="e#9708#9891#0" />
+            <element signature="e#9767#9891#0" />
+            <element signature="e#9896#9905#0" />
+            <element signature="e#10051#10420#0" />
+            <element signature="e#10252#10386#0" />
+            <element signature="e#10475#10954#0" />
+            <element signature="e#10987#11492#0" />
+            <element signature="e#14710#14865#0" />
+            <element signature="e#15050#20170#0" />
+            <element signature="e#15409#15557#0" />
+            <element signature="e#13901#14045#0" />
+            <element signature="e#16187#16338#0" />
+            <element signature="e#19505#20170#0" />
+            <element signature="e#19631#20124#0" />
+            <element signature="e#20556#20709#0" />
+            <element signature="e#20845#20994#0" />
+            <element signature="e#16232#16388#0" />
+            <element signature="e#16474#17081#0" />
+            <element signature="e#24778#25271#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-553">
+          <caret line="341" column="18" lean-forward="true" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#193#347#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#304#555#0" />
+            <element signature="e#562#798#0" />
+            <element signature="e#816#1001#0" />
+            <element signature="e#1012#1186#0" />
+            <element signature="e#1511#15332#0" />
+            <element signature="e#1989#2592#0" />
+            <element signature="e#2022#2295#0" />
+            <element signature="e#2138#2191#0" />
+            <element signature="e#2242#2295#0" />
+            <element signature="e#2337#2506#0" />
+            <element signature="e#2453#2506#0" />
+            <element signature="e#2548#2592#0" />
+            <element signature="e#2920#7349#0" />
+            <element signature="e#3743#3844#0" />
+            <element signature="e#3871#7313#0" />
+            <element signature="e#4191#4300#0" />
+            <element signature="e#4386#4506#0" />
+            <element signature="e#4591#5829#0" />
+            <element signature="e#4673#4801#0" />
+            <element signature="e#4938#5088#0" />
+            <element signature="e#5298#5470#0" />
+            <element signature="e#5679#5829#0" />
+            <element signature="e#5976#6096#0" />
+            <element signature="e#6301#6443#0" />
+            <element signature="e#6647#6778#0" />
+            <element signature="e#6926#7046#0" />
+            <element signature="e#7193#7313#0" />
+            <element signature="e#7431#11895#0" />
+            <element signature="e#7674#7802#0" />
+            <element signature="e#8325#8426#0" />
+            <element signature="e#8453#11895#0" />
+            <element signature="e#8773#8882#0" />
+            <element signature="e#8968#9088#0" />
+            <element signature="e#9173#10411#0" />
+            <element signature="e#9255#9383#0" />
+            <element signature="e#9520#9670#0" />
+            <element signature="e#9880#10052#0" />
+            <element signature="e#10261#10411#0" />
+            <element signature="e#10558#10678#0" />
+            <element signature="e#10883#11025#0" />
+            <element signature="e#11229#11360#0" />
+            <element signature="e#11508#11628#0" />
+            <element signature="e#11775#11895#0" />
+            <element signature="e#12339#13766#0" />
+            <element signature="e#12374#12860#0" />
+            <element signature="e#12571#12742#0" />
+            <element signature="e#12777#12860#0" />
+            <element signature="e#13000#13450#0" />
+            <element signature="e#13193#13332#0" />
+            <element signature="e#13367#13450#0" />
+            <element signature="e#13563#13706#0" />
+            <element signature="e#13848#15332#0" />
+            <element signature="e#13883#14398#0" />
+            <element signature="e#14084#14280#0" />
+            <element signature="e#14315#14398#0" />
+            <element signature="e#14538#14996#0" />
+            <element signature="e#14735#14878#0" />
+            <element signature="e#14913#14996#0" />
+            <element signature="e#15113#15260#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/msilib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7490">
+          <caret line="202" column="8" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/Volvo2.png" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/Volvo.png" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/TestFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-762">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+          <folding>
+            <element signature="e#48#282#0" />
+            <element signature="e#293#468#0" />
+            <element signature="e#791#869#0" />
+            <element signature="e#974#1040#0" />
+            <element signature="e#1259#1323#0" />
+            <element signature="e#1611#1959#0" />
+            <element signature="e#2035#8786#0" />
+            <element signature="e#2173#6885#0" />
+            <element signature="e#2256#6847#0" />
+            <element signature="e#2366#6847#0" />
+            <element signature="e#2748#3059#0" />
+            <element signature="e#2862#3059#0" />
+            <element signature="e#2932#3059#0" />
+            <element signature="e#3124#3437#0" />
+            <element signature="e#3238#3437#0" />
+            <element signature="e#3310#3437#0" />
+            <element signature="e#3502#3815#0" />
+            <element signature="e#3616#3815#0" />
+            <element signature="e#3688#3815#0" />
+            <element signature="e#3880#4193#0" />
+            <element signature="e#3994#4193#0" />
+            <element signature="e#4066#4193#0" />
+            <element signature="e#4258#4571#0" />
+            <element signature="e#4372#4571#0" />
+            <element signature="e#4444#4571#0" />
+            <element signature="e#4636#4949#0" />
+            <element signature="e#4750#4949#0" />
+            <element signature="e#4822#4949#0" />
+            <element signature="e#5014#5327#0" />
+            <element signature="e#5128#5327#0" />
+            <element signature="e#5200#5327#0" />
+            <element signature="e#5392#5705#0" />
+            <element signature="e#5506#5705#0" />
+            <element signature="e#5578#5705#0" />
+            <element signature="e#5770#6083#0" />
+            <element signature="e#5884#6083#0" />
+            <element signature="e#5956#6083#0" />
+            <element signature="e#6149#6464#0" />
+            <element signature="e#6264#6464#0" />
+            <element signature="e#6337#6464#0" />
+            <element signature="e#6531#6847#0" />
+            <element signature="e#6646#6847#0" />
+            <element signature="e#6720#6847#0" />
+            <element signature="e#6904#8786#0" />
+            <element signature="e#7041#8748#0" />
+            <element signature="e#7114#7293#0" />
+            <element signature="e#7403#7578#0" />
+            <element signature="e#7694#7869#0" />
+            <element signature="e#7985#8160#0" />
+            <element signature="e#8279#8454#0" />
+            <element signature="e#8573#8748#0" />
+            <element signature="e#9195#9279#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7076">
+          <caret line="249" column="90" selection-start-line="10" selection-end-line="249" selection-end-column="90" />
+          <folding>
+            <element signature="e#86#150#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="242" column="55" selection-start-line="242" selection-start-column="55" selection-end-line="242" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#86#150#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="235" column="66" lean-forward="true" selection-start-line="228" selection-start-column="4" selection-end-line="235" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="423" column="7" lean-forward="true" selection-start-line="417" selection-start-column="4" selection-end-line="423" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReChecking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="925" column="11" lean-forward="true" selection-start-line="925" selection-start-column="11" selection-end-line="925" selection-end-column="11" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#193#347#0" />
+            <element signature="e#375#506#0" />
+            <element signature="e#545#1566#0" />
+            <element signature="e#593#1357#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#838#915#0" />
+            <element signature="e#1030#1107#0" />
+            <element signature="e#1191#1268#0" />
+            <element signature="e#1596#4747#0" />
+            <element signature="e#1889#3204#0" />
+            <element signature="e#1931#2179#0" />
+            <element signature="e#2193#3204#0" />
+            <element signature="e#2235#3168#0" />
+            <element signature="e#3380#4725#0" />
+            <element signature="e#3422#3655#0" />
+            <element signature="e#3669#4725#0" />
+            <element signature="e#3711#4689#0" />
+            <element signature="e#4781#5410#0" />
+            <element signature="e#4904#5138#0" />
+            <element signature="e#5261#5292#0" />
+            <element signature="e#5456#5603#0" />
+            <element signature="e#5628#5858#0" />
+            <element signature="e#5641#5669#0" />
+            <element signature="e#5723#5792#0" />
+            <element signature="e#5897#6257#0" />
+            <element signature="e#5929#6257#0" />
+            <element signature="e#6294#6526#0" />
+            <element signature="e#6320#6526#0" />
+            <element signature="e#6567#6773#0" />
+            <element signature="e#6598#6773#0" />
+            <element signature="e#6819#7240#0" />
+            <element signature="e#6897#7018#0" />
+            <element signature="e#7119#7240#0" />
+            <element signature="e#7286#7416#0" />
+            <element signature="e#7456#7562#0" />
+            <element signature="e#7595#7735#0" />
+            <element signature="e#7775#7888#0" />
+            <element signature="e#7964#10998#0" />
+            <element signature="e#8187#8410#0" />
+            <element signature="e#8456#8679#0" />
+            <element signature="e#8725#8944#0" />
+            <element signature="e#8989#9212#0" />
+            <element signature="e#9254#9289#0" />
+            <element signature="e#9419#9781#0" />
+            <element signature="e#9786#9867#0" />
+            <element signature="e#9968#10282#0" />
+            <element signature="e#10344#10925#0" />
+            <element signature="e#10404#10636#0" />
+            <element signature="e#10453#10636#0" />
+            <element signature="e#10512#10636#0" />
+            <element signature="e#10693#10925#0" />
+            <element signature="e#10742#10925#0" />
+            <element signature="e#10801#10925#0" />
+            <element signature="e#10930#10939#0" />
+            <element signature="e#11085#11488#0" />
+            <element signature="e#11286#11454#0" />
+            <element signature="e#11542#11612#0" />
+            <element signature="e#11647#11809#0" />
+            <element signature="e#11721#11809#0" />
+            <element signature="e#11864#12343#0" />
+            <element signature="e#12376#12881#0" />
+            <element signature="e#15723#21949#0" />
+            <element signature="e#15922#16148#0" />
+            <element signature="e#16167#21949#0" />
+            <element signature="e#16266#21949#0" />
+            <element signature="e#16333#18905#0" />
+            <element signature="e#16948#17101#0" />
+            <element signature="e#17235#17384#0" />
+            <element signature="e#17510#17666#0" />
+            <element signature="e#18189#18905#0" />
+            <element signature="e#18317#18859#0" />
+            <element signature="e#18940#21949#0" />
+            <element signature="e#19526#19689#0" />
+            <element signature="e#19823#19982#0" />
+            <element signature="e#20140#20293#0" />
+            <element signature="e#20356#20522#0" />
+            <element signature="e#20583#20734#0" />
+            <element signature="e#20801#20951#0" />
+            <element signature="e#21293#21949#0" />
+            <element signature="e#21356#21898#0" />
+            <element signature="e#23181#23303#0" />
+            <element signature="e#23371#25562#0" />
+            <element signature="e#23594#23817#0" />
+            <element signature="e#23863#24082#0" />
+            <element signature="e#24127#24350#0" />
+            <element signature="e#24548#24811#0" />
+            <element signature="e#24816#24897#0" />
+            <element signature="e#24998#25312#0" />
+            <element signature="e#25358#25525#0" />
+            <element signature="e#25409#25525#0" />
+            <element signature="e#28969#32950#0" />
+            <element signature="e#29330#29520#0" />
+            <element signature="e#29381#29482#0" />
+            <element signature="e#29595#29806#0" />
+            <element signature="e#29646#29754#0" />
+            <element signature="e#29878#30080#0" />
+            <element signature="e#29929#30034#0" />
+            <element signature="e#30161#30390#0" />
+            <element signature="e#30212#30326#0" />
+            <element signature="e#30458#30648#0" />
+            <element signature="e#30509#30610#0" />
+            <element signature="e#30715#30902#0" />
+            <element signature="e#30766#30866#0" />
+            <element signature="e#31042#31200#0" />
+            <element signature="e#31210#31421#0" />
+            <element signature="e#31261#31369#0" />
+            <element signature="e#31577#31788#0" />
+            <element signature="e#31628#31736#0" />
+            <element signature="e#31928#31959#0" />
+            <element signature="e#31969#32180#0" />
+            <element signature="e#32020#32128#0" />
+            <element signature="e#32320#32347#0" />
+            <element signature="e#32357#32568#0" />
+            <element signature="e#32408#32516#0" />
+            <element signature="e#32708#32729#0" />
+            <element signature="e#32739#32950#0" />
+            <element signature="e#32790#32898#0" />
+            <element signature="e#35319#35443#0" />
+            <element signature="e#35511#37702#0" />
+            <element signature="e#35734#35957#0" />
+            <element signature="e#36003#36222#0" />
+            <element signature="e#36267#36490#0" />
+            <element signature="e#36688#36951#0" />
+            <element signature="e#36956#37037#0" />
+            <element signature="e#37138#37452#0" />
+            <element signature="e#37498#37665#0" />
+            <element signature="e#37549#37665#0" />
+            <element signature="e#41171#45190#0" />
+            <element signature="e#41533#41725#0" />
+            <element signature="e#41584#41686#0" />
+            <element signature="e#41801#42014#0" />
+            <element signature="e#41852#41961#0" />
+            <element signature="e#42087#42291#0" />
+            <element signature="e#42138#42244#0" />
+            <element signature="e#42373#42604#0" />
+            <element signature="e#42424#42539#0" />
+            <element signature="e#42673#42865#0" />
+            <element signature="e#42724#42826#0" />
+            <element signature="e#42933#43122#0" />
+            <element signature="e#42984#43085#0" />
+            <element signature="e#43264#43422#0" />
+            <element signature="e#43432#43645#0" />
+            <element signature="e#43483#43592#0" />
+            <element signature="e#43803#44016#0" />
+            <element signature="e#43854#43963#0" />
+            <element signature="e#44158#44189#0" />
+            <element signature="e#44199#44412#0" />
+            <element signature="e#44250#44359#0" />
+            <element signature="e#44554#44581#0" />
+            <element signature="e#44591#44804#0" />
+            <element signature="e#44642#44751#0" />
+            <element signature="e#44946#44967#0" />
+            <element signature="e#44977#45190#0" />
+            <element signature="e#45028#45137#0" />
+            <element signature="e#47662#48042#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/pack/PackFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="e#115#559#0" />
+            <element signature="e#115#223#1" />
+            <element signature="e#353#543#0" />
+            <element signature="e#585#926#0" />
+            <element signature="e#664#926#0" />
+            <element signature="e#955#1019#0" />
+            <element signature="e#1440#1638#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/udf/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="5101" column="11" lean-forward="true" selection-start-line="5101" selection-start-column="11" selection-end-line="5101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-922">
+          <caret line="4191" column="38" lean-forward="true" selection-start-line="4191" selection-start-column="38" selection-end-line="4191" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pathdict/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="167" column="93" selection-start-line="167" selection-start-column="93" selection-end-line="167" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/vdict" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/aspdict.py" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="409" column="70" selection-start-line="409" selection-start-column="70" selection-end-line="409" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="320" column="12" selection-start-line="320" selection-start-column="12" selection-end-line="320" selection-end-column="104" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#193#347#0" />
+            <element signature="e#375#506#0" />
+            <element signature="e#545#1566#0" />
+            <element signature="e#593#1357#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#838#915#0" />
+            <element signature="e#1030#1107#0" />
+            <element signature="e#1191#1268#0" />
+            <element signature="e#1596#4747#0" />
+            <element signature="e#1889#3204#0" />
+            <element signature="e#1931#2179#0" />
+            <element signature="e#2193#3204#0" />
+            <element signature="e#2235#3168#0" />
+            <element signature="e#3380#4725#0" />
+            <element signature="e#3422#3655#0" />
+            <element signature="e#3669#4725#0" />
+            <element signature="e#3711#4689#0" />
+            <element signature="e#4781#5410#0" />
+            <element signature="e#4904#5138#0" />
+            <element signature="e#5261#5292#0" />
+            <element signature="e#5452#5686#0" />
+            <element signature="e#5711#5941#0" />
+            <element signature="e#5724#5752#0" />
+            <element signature="e#5806#5875#0" />
+            <element signature="e#5980#6340#0" />
+            <element signature="e#6012#6340#0" />
+            <element signature="e#6377#6609#0" />
+            <element signature="e#6403#6609#0" />
+            <element signature="e#6650#6856#0" />
+            <element signature="e#6681#6856#0" />
+            <element signature="e#6902#7323#0" />
+            <element signature="e#6980#7101#0" />
+            <element signature="e#7202#7323#0" />
+            <element signature="e#7369#7778#0" />
+            <element signature="e#7570#7695#0" />
+            <element signature="e#7705#7762#0" />
+            <element signature="e#7818#7924#0" />
+            <element signature="e#7957#8097#0" />
+            <element signature="e#8137#8250#0" />
+            <element signature="e#8326#11360#0" />
+            <element signature="e#8549#8772#0" />
+            <element signature="e#8818#9041#0" />
+            <element signature="e#9087#9306#0" />
+            <element signature="e#9351#9574#0" />
+            <element signature="e#9616#9651#0" />
+            <element signature="e#9781#10143#0" />
+            <element signature="e#10148#10229#0" />
+            <element signature="e#10330#10644#0" />
+            <element signature="e#10706#11287#0" />
+            <element signature="e#10766#10998#0" />
+            <element signature="e#10815#10998#0" />
+            <element signature="e#10874#10998#0" />
+            <element signature="e#11055#11287#0" />
+            <element signature="e#11104#11287#0" />
+            <element signature="e#11163#11287#0" />
+            <element signature="e#11292#11301#0" />
+            <element signature="e#11447#11850#0" />
+            <element signature="e#11648#11816#0" />
+            <element signature="e#11904#11974#0" />
+            <element signature="e#12029#12508#0" />
+            <element signature="e#12541#13046#0" />
+            <element signature="e#13440#13542#0" />
+            <element signature="e#15742#22138#0" />
+            <element signature="e#15941#16167#0" />
+            <element signature="e#16186#22138#0" />
+            <element signature="e#16285#22138#0" />
+            <element signature="e#16352#19074#0" />
+            <element signature="e#16967#17120#0" />
+            <element signature="e#17254#17403#0" />
+            <element signature="e#17529#17685#0" />
+            <element signature="e#18360#19074#0" />
+            <element signature="e#18486#19028#0" />
+            <element signature="e#19109#22138#0" />
+            <element signature="e#19695#19858#0" />
+            <element signature="e#19992#20151#0" />
+            <element signature="e#20319#20472#0" />
+            <element signature="e#20535#20701#0" />
+            <element signature="e#20762#20913#0" />
+            <element signature="e#20980#21130#0" />
+            <element signature="e#21482#22138#0" />
+            <element signature="e#21545#22087#0" />
+            <element signature="e#23370#23492#0" />
+            <element signature="e#23560#25751#0" />
+            <element signature="e#23783#24006#0" />
+            <element signature="e#24052#24271#0" />
+            <element signature="e#24316#24539#0" />
+            <element signature="e#24737#25000#0" />
+            <element signature="e#25005#25086#0" />
+            <element signature="e#25187#25501#0" />
+            <element signature="e#25547#25714#0" />
+            <element signature="e#25598#25714#0" />
+            <element signature="e#29158#33139#0" />
+            <element signature="e#29519#29709#0" />
+            <element signature="e#29570#29671#0" />
+            <element signature="e#29784#29995#0" />
+            <element signature="e#29835#29943#0" />
+            <element signature="e#30067#30269#0" />
+            <element signature="e#30118#30223#0" />
+            <element signature="e#30350#30579#0" />
+            <element signature="e#30401#30515#0" />
+            <element signature="e#30647#30837#0" />
+            <element signature="e#30698#30799#0" />
+            <element signature="e#30904#31091#0" />
+            <element signature="e#30955#31055#0" />
+            <element signature="e#31231#31389#0" />
+            <element signature="e#31399#31610#0" />
+            <element signature="e#31450#31558#0" />
+            <element signature="e#31766#31977#0" />
+            <element signature="e#31817#31925#0" />
+            <element signature="e#32117#32148#0" />
+            <element signature="e#32158#32369#0" />
+            <element signature="e#32209#32317#0" />
+            <element signature="e#32509#32536#0" />
+            <element signature="e#32546#32757#0" />
+            <element signature="e#32597#32705#0" />
+            <element signature="e#32897#32918#0" />
+            <element signature="e#32928#33139#0" />
+            <element signature="e#32979#33087#0" />
+            <element signature="e#35508#35632#0" />
+            <element signature="e#35700#37891#0" />
+            <element signature="e#35923#36146#0" />
+            <element signature="e#36192#36411#0" />
+            <element signature="e#36456#36679#0" />
+            <element signature="e#36877#37140#0" />
+            <element signature="e#37145#37226#0" />
+            <element signature="e#37327#37641#0" />
+            <element signature="e#37687#37854#0" />
+            <element signature="e#37738#37854#0" />
+            <element signature="e#41360#45379#0" />
+            <element signature="e#41722#41914#0" />
+            <element signature="e#41773#41875#0" />
+            <element signature="e#41990#42203#0" />
+            <element signature="e#42041#42150#0" />
+            <element signature="e#42276#42480#0" />
+            <element signature="e#42327#42433#0" />
+            <element signature="e#42562#42793#0" />
+            <element signature="e#42613#42728#0" />
+            <element signature="e#42862#43054#0" />
+            <element signature="e#42913#43015#0" />
+            <element signature="e#43122#43311#0" />
+            <element signature="e#43173#43274#0" />
+            <element signature="e#43453#43611#0" />
+            <element signature="e#43621#43834#0" />
+            <element signature="e#43672#43781#0" />
+            <element signature="e#43992#44205#0" />
+            <element signature="e#44043#44152#0" />
+            <element signature="e#44347#44378#0" />
+            <element signature="e#44388#44601#0" />
+            <element signature="e#44439#44548#0" />
+            <element signature="e#44743#44770#0" />
+            <element signature="e#44780#44993#0" />
+            <element signature="e#44831#44940#0" />
+            <element signature="e#45135#45156#0" />
+            <element signature="e#45166#45379#0" />
+            <element signature="e#45217#45326#0" />
+            <element signature="e#47839#48219#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3045">
+          <caret line="271" selection-start-line="271" selection-end-line="276" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#205#341#0" />
+            <element signature="e#381#511#0" />
+            <element signature="e#556#696#0" />
+            <element signature="e#747#1885#0" />
+            <element signature="e#795#1563#0" />
+            <element signature="e#856#924#0" />
+            <element signature="e#1013#1081#0" />
+            <element signature="e#1187#1255#0" />
+            <element signature="e#1330#1398#0" />
+            <element signature="e#1425#1563#0" />
+            <element signature="e#1927#9637#0" />
+            <element signature="e#2332#5665#0" />
+            <element signature="e#2532#2902#0" />
+            <element signature="e#2656#2835#0" />
+            <element signature="e#3060#3272#0" />
+            <element signature="e#3406#3714#0" />
+            <element signature="e#3530#3647#0" />
+            <element signature="e#3875#4129#0" />
+            <element signature="e#4297#4515#0" />
+            <element signature="e#4647#4880#0" />
+            <element signature="e#5038#5327#0" />
+            <element signature="e#5460#5665#0" />
+            <element signature="e#5907#9574#0" />
+            <element signature="e#6086#6334#0" />
+            <element signature="e#6489#6736#0" />
+            <element signature="e#6890#7098#0" />
+            <element signature="e#7225#7433#0" />
+            <element signature="e#7586#7809#0" />
+            <element signature="e#7938#8386#0" />
+            <element signature="e#8062#8319#0" />
+            <element signature="e#8547#8840#0" />
+            <element signature="e#8968#9214#0" />
+            <element signature="e#9367#9574#0" />
+            <element signature="e#9683#10101#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainV1.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5191">
+          <caret line="183" column="30" selection-start-line="183" selection-start-column="30" selection-end-line="183" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21837">
+          <caret line="759" column="22" lean-forward="true" selection-start-line="759" selection-start-column="22" selection-end-line="759" selection-end-column="22" />
+          <folding>
+            <element signature="e#2656#2835#0" />
+            <element signature="e#3530#3647#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#193#347#0" />
+            <element signature="e#375#506#0" />
+            <element signature="e#545#1566#0" />
+            <element signature="e#593#1357#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#838#915#0" />
+            <element signature="e#1030#1107#0" />
+            <element signature="e#1191#1268#0" />
+            <element signature="e#1596#4747#0" />
+            <element signature="e#1889#3204#0" />
+            <element signature="e#1931#2179#0" />
+            <element signature="e#2193#3204#0" />
+            <element signature="e#2235#3168#0" />
+            <element signature="e#3380#4725#0" />
+            <element signature="e#3422#3655#0" />
+            <element signature="e#3669#4725#0" />
+            <element signature="e#3711#4689#0" />
+            <element signature="e#4781#5410#0" />
+            <element signature="e#4904#5138#0" />
+            <element signature="e#5261#5292#0" />
+            <element signature="e#5628#5858#0" />
+            <element signature="e#5641#5669#0" />
+            <element signature="e#5723#5792#0" />
+            <element signature="e#5897#6257#0" />
+            <element signature="e#5929#6257#0" />
+            <element signature="e#6294#6526#0" />
+            <element signature="e#6320#6526#0" />
+            <element signature="e#6567#6773#0" />
+            <element signature="e#6598#6773#0" />
+            <element signature="e#6819#7240#0" />
+            <element signature="e#6897#7018#0" />
+            <element signature="e#7119#7240#0" />
+            <element signature="e#7278#7408#0" />
+            <element signature="e#7448#7554#0" />
+            <element signature="e#7587#7727#0" />
+            <element signature="e#7767#7880#0" />
+            <element signature="e#7956#10990#0" />
+            <element signature="e#8179#8402#0" />
+            <element signature="e#8448#8671#0" />
+            <element signature="e#8717#8936#0" />
+            <element signature="e#8981#9204#0" />
+            <element signature="e#9246#9281#0" />
+            <element signature="e#9411#9773#0" />
+            <element signature="e#9778#9859#0" />
+            <element signature="e#9960#10274#0" />
+            <element signature="e#10336#10917#0" />
+            <element signature="e#10396#10628#0" />
+            <element signature="e#10445#10628#0" />
+            <element signature="e#10504#10628#0" />
+            <element signature="e#10685#10917#0" />
+            <element signature="e#10734#10917#0" />
+            <element signature="e#10793#10917#0" />
+            <element signature="e#10922#10931#0" />
+            <element signature="e#11077#11480#0" />
+            <element signature="e#11278#11446#0" />
+            <element signature="e#11534#11604#0" />
+            <element signature="e#11639#11801#0" />
+            <element signature="e#11713#11801#0" />
+            <element signature="e#11856#12335#0" />
+            <element signature="e#12368#12873#0" />
+            <element signature="e#14714#20829#0" />
+            <element signature="e#14913#15237#0" />
+            <element signature="e#15135#15237#0" />
+            <element signature="e#15256#20829#0" />
+            <element signature="e#15355#20829#0" />
+            <element signature="e#15401#17869#0" />
+            <element signature="e#16201#16350#0" />
+            <element signature="e#16476#16632#0" />
+            <element signature="e#17155#17869#0" />
+            <element signature="e#17281#17823#0" />
+            <element signature="e#17904#20829#0" />
+            <element signature="e#18490#18653#0" />
+            <element signature="e#18787#18946#0" />
+            <element signature="e#19104#19257#0" />
+            <element signature="e#19320#19486#0" />
+            <element signature="e#19547#19698#0" />
+            <element signature="e#19765#19915#0" />
+            <element signature="e#20173#20829#0" />
+            <element signature="e#20236#20778#0" />
+            <element signature="e#22214#22336#0" />
+            <element signature="e#22404#24595#0" />
+            <element signature="e#22627#22850#0" />
+            <element signature="e#22896#23115#0" />
+            <element signature="e#23160#23383#0" />
+            <element signature="e#23581#23844#0" />
+            <element signature="e#23849#23930#0" />
+            <element signature="e#24031#24345#0" />
+            <element signature="e#24391#24558#0" />
+            <element signature="e#24442#24558#0" />
+            <element signature="e#26988#30969#0" />
+            <element signature="e#27349#27539#0" />
+            <element signature="e#27400#27501#0" />
+            <element signature="e#27614#27825#0" />
+            <element signature="e#27665#27773#0" />
+            <element signature="e#27897#28099#0" />
+            <element signature="e#27948#28053#0" />
+            <element signature="e#28180#28409#0" />
+            <element signature="e#28231#28345#0" />
+            <element signature="e#28477#28667#0" />
+            <element signature="e#28528#28629#0" />
+            <element signature="e#28734#28921#0" />
+            <element signature="e#28785#28885#0" />
+            <element signature="e#29061#29219#0" />
+            <element signature="e#29229#29440#0" />
+            <element signature="e#29280#29388#0" />
+            <element signature="e#29596#29807#0" />
+            <element signature="e#29647#29755#0" />
+            <element signature="e#29947#29978#0" />
+            <element signature="e#29988#30199#0" />
+            <element signature="e#30039#30147#0" />
+            <element signature="e#30339#30366#0" />
+            <element signature="e#30376#30587#0" />
+            <element signature="e#30427#30535#0" />
+            <element signature="e#30727#30748#0" />
+            <element signature="e#30758#30969#0" />
+            <element signature="e#30809#30917#0" />
+            <element signature="e#33338#33462#0" />
+            <element signature="e#33530#35721#0" />
+            <element signature="e#33753#33976#0" />
+            <element signature="e#34022#34241#0" />
+            <element signature="e#34286#34509#0" />
+            <element signature="e#34707#34970#0" />
+            <element signature="e#34975#35056#0" />
+            <element signature="e#35157#35471#0" />
+            <element signature="e#35517#35684#0" />
+            <element signature="e#35568#35684#0" />
+            <element signature="e#38176#42195#0" />
+            <element signature="e#38538#38730#0" />
+            <element signature="e#38589#38691#0" />
+            <element signature="e#38806#39019#0" />
+            <element signature="e#38857#38966#0" />
+            <element signature="e#39092#39296#0" />
+            <element signature="e#39143#39249#0" />
+            <element signature="e#39378#39609#0" />
+            <element signature="e#39429#39544#0" />
+            <element signature="e#39678#39870#0" />
+            <element signature="e#39729#39831#0" />
+            <element signature="e#39938#40127#0" />
+            <element signature="e#39989#40090#0" />
+            <element signature="e#40269#40427#0" />
+            <element signature="e#40437#40650#0" />
+            <element signature="e#40488#40597#0" />
+            <element signature="e#40808#41021#0" />
+            <element signature="e#40859#40968#0" />
+            <element signature="e#41163#41194#0" />
+            <element signature="e#41204#41417#0" />
+            <element signature="e#41255#41364#0" />
+            <element signature="e#41559#41586#0" />
+            <element signature="e#41596#41809#0" />
+            <element signature="e#41647#41756#0" />
+            <element signature="e#41951#41972#0" />
+            <element signature="e#41982#42195#0" />
+            <element signature="e#42033#42142#0" />
+            <element signature="e#44667#45047#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/pack/PackFilesLocal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1276">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.0.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7540">
+          <caret line="559" column="11" lean-forward="true" selection-start-line="559" selection-start-column="11" selection-end-line="559" selection-end-column="11" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#205#341#0" />
+            <element signature="e#381#511#0" />
+            <element signature="e#556#696#0" />
+            <element signature="e#747#1885#0" />
+            <element signature="e#795#1563#0" />
+            <element signature="e#856#924#0" />
+            <element signature="e#1013#1081#0" />
+            <element signature="e#1187#1255#0" />
+            <element signature="e#1330#1398#0" />
+            <element signature="e#1425#1563#0" />
+            <element signature="e#1927#9637#0" />
+            <element signature="e#2332#5665#0" />
+            <element signature="e#2532#2902#0" />
+            <element signature="e#2656#2835#0" />
+            <element signature="e#3060#3272#0" />
+            <element signature="e#3406#3714#0" />
+            <element signature="e#3530#3647#0" />
+            <element signature="e#3875#4129#0" />
+            <element signature="e#4297#4515#0" />
+            <element signature="e#4647#4880#0" />
+            <element signature="e#5038#5327#0" />
+            <element signature="e#5460#5665#0" />
+            <element signature="e#5907#9574#0" />
+            <element signature="e#6086#6334#0" />
+            <element signature="e#6489#6736#0" />
+            <element signature="e#6890#7098#0" />
+            <element signature="e#7225#7433#0" />
+            <element signature="e#7586#7809#0" />
+            <element signature="e#7938#8386#0" />
+            <element signature="e#8062#8319#0" />
+            <element signature="e#8547#8840#0" />
+            <element signature="e#8968#9214#0" />
+            <element signature="e#9367#9574#0" />
+            <element signature="e#9683#10101#0" />
+            <element signature="e#10155#10373#0" />
+            <element signature="e#10398#10628#0" />
+            <element signature="e#10411#10439#0" />
+            <element signature="e#10493#10562#0" />
+            <element signature="e#10679#10990#0" />
+            <element signature="e#10711#10990#0" />
+            <element signature="e#11039#11330#0" />
+            <element signature="e#11071#11330#0" />
+            <element signature="e#11383#11562#0" />
+            <element signature="e#11414#11562#0" />
+            <element signature="e#11620#12005#0" />
+            <element signature="e#11698#11801#0" />
+            <element signature="e#11902#12005#0" />
+            <element signature="e#12071#12470#0" />
+            <element signature="e#12334#12382#0" />
+            <element signature="e#12387#12432#0" />
+            <element signature="e#12522#12627#0" />
+            <element signature="e#12672#12783#0" />
+            <element signature="e#12835#12938#0" />
+            <element signature="e#13237#13460#0" />
+            <element signature="e#13506#13729#0" />
+            <element signature="e#13775#13994#0" />
+            <element signature="e#14039#14262#0" />
+            <element signature="e#14304#14339#0" />
+            <element signature="e#14469#14831#0" />
+            <element signature="e#14836#14917#0" />
+            <element signature="e#15018#15539#0" />
+            <element signature="e#16269#16695#0" />
+            <element signature="e#16466#16661#0" />
+            <element signature="e#16772#16930#0" />
+            <element signature="e#16985#17464#0" />
+            <element signature="e#17497#18002#0" />
+            <element signature="e#18235#18337#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3016">
+          <caret line="329" lean-forward="true" selection-start-line="329" selection-end-line="329" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#193#347#0" />
+            <element signature="e#375#506#0" />
+            <element signature="e#545#1566#0" />
+            <element signature="e#593#1357#0" />
+            <element signature="e#663#740#0" />
+            <element signature="e#838#915#0" />
+            <element signature="e#1030#1107#0" />
+            <element signature="e#1191#1268#0" />
+            <element signature="e#1596#4747#0" />
+            <element signature="e#1889#3204#0" />
+            <element signature="e#1931#2179#0" />
+            <element signature="e#2193#3204#0" />
+            <element signature="e#2235#3168#0" />
+            <element signature="e#3380#4725#0" />
+            <element signature="e#3422#3655#0" />
+            <element signature="e#3669#4725#0" />
+            <element signature="e#3711#4689#0" />
+            <element signature="e#4781#5414#0" />
+            <element signature="e#4904#5138#0" />
+            <element signature="e#5265#5296#0" />
+            <element signature="e#5456#5690#0" />
+            <element signature="e#5715#5945#0" />
+            <element signature="e#5728#5756#0" />
+            <element signature="e#5810#5879#0" />
+            <element signature="e#5984#6344#0" />
+            <element signature="e#6016#6344#0" />
+            <element signature="e#6381#6613#0" />
+            <element signature="e#6407#6613#0" />
+            <element signature="e#6654#6860#0" />
+            <element signature="e#6685#6860#0" />
+            <element signature="e#6906#7327#0" />
+            <element signature="e#6984#7105#0" />
+            <element signature="e#7206#7327#0" />
+            <element signature="e#7373#7782#0" />
+            <element signature="e#7574#7699#0" />
+            <element signature="e#7709#7766#0" />
+            <element signature="e#7822#7928#0" />
+            <element signature="e#7961#8101#0" />
+            <element signature="e#8553#8776#0" />
+            <element signature="e#8822#9045#0" />
+            <element signature="e#9091#9310#0" />
+            <element signature="e#9355#9578#0" />
+            <element signature="e#9620#9655#0" />
+            <element signature="e#9785#10147#0" />
+            <element signature="e#10152#10233#0" />
+            <element signature="e#10334#10648#0" />
+            <element signature="e#10710#11291#0" />
+            <element signature="e#10770#11002#0" />
+            <element signature="e#10819#11002#0" />
+            <element signature="e#10878#11002#0" />
+            <element signature="e#11059#11291#0" />
+            <element signature="e#11108#11291#0" />
+            <element signature="e#11167#11291#0" />
+            <element signature="e#11296#11305#0" />
+            <element signature="e#11451#11854#0" />
+            <element signature="e#11652#11820#0" />
+            <element signature="e#11908#11978#0" />
+            <element signature="e#12033#12512#0" />
+            <element signature="e#12545#13050#0" />
+            <element signature="e#13283#13385#0" />
+            <element signature="e#14968#15123#0" />
+            <element signature="e#18095#20756#0" />
+            <element signature="e#20100#20756#0" />
+            <element signature="e#20163#20705#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/udf/UDF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="e#58#122#0" />
+            <element signature="e#163#299#0" />
+            <element signature="e#339#469#0" />
+            <element signature="e#520#1647#0" />
+            <element signature="e#568#1325#0" />
+            <element signature="e#629#697#0" />
+            <element signature="e#786#854#0" />
+            <element signature="e#960#1028#0" />
+            <element signature="e#1103#1171#0" />
+            <element signature="e#1198#1325#0" />
+            <element signature="e#1689#5869#0" />
+            <element signature="e#1952#3732#0" />
+            <element signature="e#2022#2257#0" />
+            <element signature="e#2344#2441#0" />
+            <element signature="e#2522#2695#0" />
+            <element signature="e#2785#2925#0" />
+            <element signature="e#3022#3125#0" />
+            <element signature="e#3204#3323#0" />
+            <element signature="e#3410#3562#0" />
+            <element signature="e#3642#3732#0" />
+            <element signature="e#3893#5847#0" />
+            <element signature="e#3970#4103#0" />
+            <element signature="e#4187#4319#0" />
+            <element signature="e#4402#4495#0" />
+            <element signature="e#4569#4662#0" />
+            <element signature="e#4744#4852#0" />
+            <element signature="e#4928#5220#0" />
+            <element signature="e#5310#5466#0" />
+            <element signature="e#5541#5673#0" />
+            <element signature="e#5755#5847#0" />
+            <element signature="e#5915#6429#0" />
+            <element signature="e#6155#6186#0" />
+            <element signature="e#6278#6379#0" />
+            <element signature="e#6481#6697#0" />
+            <element signature="e#6722#6952#0" />
+            <element signature="e#6735#6763#0" />
+            <element signature="e#6817#6886#0" />
+            <element signature="e#7003#7266#0" />
+            <element signature="e#7035#7266#0" />
+            <element signature="e#7315#7567#0" />
+            <element signature="e#7347#7567#0" />
+            <element signature="e#7620#7799#0" />
+            <element signature="e#7651#7799#0" />
+            <element signature="e#7857#8242#0" />
+            <element signature="e#7935#8038#0" />
+            <element signature="e#8139#8242#0" />
+            <element signature="e#8306#8690#0" />
+            <element signature="e#8554#8602#0" />
+            <element signature="e#8607#8652#0" />
+            <element signature="e#8742#8847#0" />
+            <element signature="e#8892#9003#0" />
+            <element signature="e#9055#9158#0" />
+            <element signature="e#9234#12390#0" />
+            <element signature="e#9457#9680#0" />
+            <element signature="e#9726#9949#0" />
+            <element signature="e#9995#10214#0" />
+            <element signature="e#10259#10482#0" />
+            <element signature="e#10524#10559#0" />
+            <element signature="e#10689#11051#0" />
+            <element signature="e#11056#11137#0" />
+            <element signature="e#11238#11759#0" />
+            <element signature="e#11777#12317#0" />
+            <element signature="e#11822#12041#0" />
+            <element signature="e#11871#12041#0" />
+            <element signature="e#11917#12041#0" />
+            <element signature="e#12098#12317#0" />
+            <element signature="e#12147#12317#0" />
+            <element signature="e#12193#12317#0" />
+            <element signature="e#12490#12916#0" />
+            <element signature="e#12687#12882#0" />
+            <element signature="e#12993#13151#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="52" column="32" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="32" />
+          <folding>
+            <element signature="e#100#164#0" />
+            <element signature="e#205#341#0" />
+            <element signature="e#381#511#0" />
+            <element signature="e#556#696#0" />
+            <element signature="e#856#924#0" />
+            <element signature="e#1013#1081#0" />
+            <element signature="e#1187#1255#0" />
+            <element signature="e#1330#1398#0" />
+            <element signature="e#6693#6850#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
