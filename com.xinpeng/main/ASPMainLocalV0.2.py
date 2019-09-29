@@ -423,7 +423,7 @@ data_Sales_MKT2 = []
 data_Sales_MKT3 = []
 data_Sales_MKT4 = []
 data_Sales_MKT5 = []
-
+# name = []
 # 几个生成的excel路径及文件名
 today = str(datetime.date.today()).replace('-', '')
 
@@ -479,6 +479,8 @@ for file_idx in range(len(file_name)):
             row_data_Sales_MKT3 = []
             row_data_Sales_MKT4 = []
             row_data_Sales_MKT5 = []
+            for idx_col in range(len(header_std)):
+                to_replace_null(df_fcst,header_std, idx_col, idx_row)
             if str(df_fcst[header_std[1]][idx_row]).replace(' ', '').upper() == 'MKT':
                 for idx_col in range(len(header_std)):
                     to_float(df_fcst, header_std, idx_col, idx_row)
@@ -510,8 +512,7 @@ for file_idx in range(len(file_name)):
                     row_data_MI.append(df_fcst[header_std[idx_col]][idx_row])
                 data_MI.append(row_data_MI)
             elif str(df_fcst[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
-                    df_fcst[header_std[2]][idx_row]).replace(' ', '').upper() in str(list(
-                ['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team',
+                    df_fcst[header_std[2]][idx_row]).replace(' ', '').upper() in str(list(['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team',
                  'West Region Team', 'ZheJiang Region Team'])).replace(' ', '').upper():
                 for idx_col in range(len(header_std)):
                     to_float(df_fcst, header_std, idx_col, idx_row)
@@ -553,8 +554,6 @@ write_to_excel(data_Sales_MKT2, header_std, writer_Sales_MKT2, [], [15, 16, 19, 
 write_to_excel(data_Sales_MKT3, header_std, writer_Sales_MKT3, [], [15, 16, 19, 32], [17, 18])
 write_to_excel(data_Sales_MKT4, header_std, writer_Sales_MKT4, [], [15, 16, 19, 32], [17, 18])
 write_to_excel(data_Sales_MKT5, header_std, writer_Sales_MKT5, [], [15, 16, 19, 32], [17, 18])
-
-
 # 计算程序耗时
 cost = time.time() - start
 print(cost)
