@@ -19,15 +19,21 @@ def is_null(df, header, row_idx):
 
 def is_ssm(df, header, row_idx):
     is_ssmc = True
-    if str(df[header[16]][row_idx]).strip() in ['N.A.', '0'] \
-            and str(df[header[17]][row_idx]) not in ['N.A.', '0']:
+    if str(df[header[16]][row_idx]).strip() not in ['Y', 'y', 'N', 'n', 'N.A.']:
         is_ssmc = False
+    else:
+        if str(df[header[16]][row_idx]).strip() in ['N.A.'] \
+                and str(df[header[17]][row_idx]) not in ['N.A.', '0']:
+            is_ssmc = False
+        elif str(df[header[16]][row_idx]).strip() in ['Y', 'y', 'N', 'n'] \
+                and str(df[header[17]][row_idx]) in ['N.A.', '0']:
+            is_ssmc = False
     return is_ssmc
 
 
 def is_life_cycle(df, header, row_idx):
     is_life = False
-    if str(df[header[4]][row_idx]).replace(' ', '').upper()\
+    if str(df[header[4]][row_idx]).replace(' ', '').upper() \
             in str(list(['Launch', 'Sustain', 'MY Change'])).replace(' ', '').upper():
         is_life = True
     return is_life
@@ -201,7 +207,7 @@ def get_month(f_path, f_name):
 
 def validate_team(df, header, row_idx):
     validation = False
-    if str(df[header_std[1]][row_idx]).replace(' ', '').upper() == 'MKT'\
+    if str(df[header_std[1]][row_idx]).replace(' ', '').upper() == 'MKT' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
             in str(list(['Traditional Media Team', 'Digital Media Team', 'Social Media Team', 'CRM Team', 'Event Team',
                          'Public Relationship', 'Creative Production', 'Digital Production', 'Strategy Team',
@@ -229,9 +235,10 @@ def validate_team(df, header, row_idx):
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in str(list(['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team','South Region Team',
-                         'West Region Team', 'ZheJiang Region Team', 'Exhibition', 'Fleet Team', 'Used Car Team',
-                         'Finance Service Team'])).replace(' ', '').upper():
+            in str(
+        list(['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team',
+              'West Region Team', 'ZheJiang Region Team', 'Exhibition', 'Fleet Team', 'Used Car Team',
+              'Finance Service Team'])).replace(' ', '').upper():
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
             df[header[2]][row_idx]).replace(' ', '').upper() in ['HK']:
@@ -245,7 +252,7 @@ def validate_team(df, header, row_idx):
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
             df[header[2]][row_idx]).replace(' ', '').upper() in ['NBDTEAM']:
         validation = True
-    return  validation
+    return validation
 
 
 def validate(df, header, row_idx):
@@ -298,7 +305,7 @@ def validate(df, header, row_idx):
                 in str(list(['Operational Cost'])).replace(' ', '').upper():
             validation_cate = True
             if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Car cost running (depreciation)', 'System (platform) maintenance', 'DTS'])).\
+                    in str(list(['Car cost running (depreciation)', 'System (platform) maintenance', 'DTS'])). \
                     replace(' ', '').upper():
                 validation_acti = True
         elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Celebrity'])).replace(' ', '').upper():
@@ -350,7 +357,7 @@ def validate(df, header, row_idx):
                 in str(list(['Public Relationship'])).replace(' ', '').upper():
             validation_cate = True
             if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['MY change communication', 'New product communication', 'Event communication'])).\
+                    in str(list(['MY change communication', 'New product communication', 'Event communication'])). \
                     replace(' ', '').upper():
                 validation_acti = True
         elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['POSM'])).replace(' ', '').upper():
@@ -374,6 +381,12 @@ def validate_kpi(df, header, row_idx):
             and str(df[header[12]][row_idx]) in ['0', 'nan', '/', '-'] \
             and str(df[header[13]][row_idx]) in ['0', 'nan', '/', '-'] \
             and str(df[header[14]][row_idx]) in ['0', 'nan', '/', '-']:
+        validation = False
+    if str(df[header[16]][row_idx]).strip().upper() == 'N' \
+            and (str(df[header[11]][row_idx]) not in ['0', 'nan', '/', '-']
+                 or str(df[header[12]][row_idx]) not in ['0', 'nan', '/', '-']
+                 or str(df[header[13]][row_idx]) not in ['0', 'nan', '/', '-']
+                 or str(df[header[14]][row_idx]) not in ['0', 'nan', '/', '-']):
         validation = False
     return validation
 
@@ -583,11 +596,11 @@ header_std = ['Issue', 'Dept', 'Team', 'Carline', 'Lifecycle', 'Branding/NonBran
               'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
               'Sep', 'Oct', 'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)']
 header_std_plus = ['Issue', 'Dept', 'Team', 'Carline', 'Lifecycle', 'Branding/NonBranding',
-              'Working/NonWorking', 'Sale funnel', 'Category', 'Activity type',
-              'Activity', 'KPI Prospects', 'KPI Leads', 'KPI Inquiry', 'KPI Order',
-              'KPI Others', 'SMM Campaign Code (Y/N)', 'SC NO.', ' SC Name',
-              'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
-              'Sep', 'Oct', 'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)', 'Q1', 'Q2', 'Q3', 'Q4', 'YTD']
+                   'Working/NonWorking', 'Sale funnel', 'Category', 'Activity type',
+                   'Activity', 'KPI Prospects', 'KPI Leads', 'KPI Inquiry', 'KPI Order',
+                   'KPI Others', 'SMM Campaign Code (Y/N)', 'SC NO.', ' SC Name',
+                   'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug',
+                   'Sep', 'Oct', 'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)', 'Q1', 'Q2', 'Q3', 'Q4', 'YTD']
 # 异常数据excel header
 header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', 'Carline', 'Lifecycle',
               'Branding/NonBranding', 'Working/NonWorking', 'Sale funnel', 'Category', 'Activity type', 'Activity',
@@ -625,10 +638,12 @@ file_path_a = "D:/ASP - Erin/FCST/Data&Log/"
 file_path_b = "D:/ASP - Erin/Header Error/"
 file_path_c = "D:/ASP - Erin/Header Error/Files/"
 file_path_d = "D:/ASP - Erin/Actual/Data&Log/"
+file_path_e = "D:/ASP - Erin/Dept-Team/"
 mkdir(file_path_a)
 mkdir(file_path_b)
 mkdir(file_path_c)
 mkdir(file_path_d)
+mkdir(file_path_e)
 # 几个生成的excel路径及文件名
 today = str(datetime.date.today()).replace('-', '')
 file_log = "D:/ASP - Erin/Log.xlsx"
@@ -638,17 +653,17 @@ file_err_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Error_" + today + ".xlsx"
 file_err_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Error_" + today + ".xlsx"
 file_header_err = "D:/ASP - Erin/Header Error/Header Error_" + today + ".xlsx"
 
-file_MKT = "D:/ASP - Erin/FCST/Dept-Team/FCST_MKT_" + today + ".xlsx"
-file_MKT_Launch = "D:/ASP - Erin/FCST/Dept-Team/FCST_MKT Launch_" + today + ".xlsx"
-file_APAC_CC = "D:/ASP - Erin/FCST/Dept-Team/FCST_APAC CC_" + today + ".xlsx"
-file_Customer_Service = "D:/ASP - Erin/FCST/Dept-Team/FCST_Customer Service_" + today + ".xlsx"
-file_DTS = "D:/ASP - Erin/FCST/Dept-Team/FCST_DTS_" + today + ".xlsx"
-file_MI = "D:/ASP - Erin/FCST/Dept-Team/FCST_MI_" + today + ".xlsx"
-file_Sales_MKT1 = "D:/ASP - Erin/FCST/Dept-Team/FCST_Sales MKT_DMKT_" + today + ".xlsx"
-file_Sales_MKT2 = "D:/ASP - Erin/FCST/Dept-Team/FCST_Sales MKT_HK_" + today + ".xlsx"
-file_Sales_MKT3 = "D:/ASP - Erin/FCST/Dept-Team/FCST_Sales MKT_Internal Fleet Car_" + today + ".xlsx"
-file_Sales_MKT4 = "D:/ASP - Erin/FCST/Dept-Team/FCST_Sales MKT_National Sales_" + today + ".xlsx"
-file_Sales_MKT5 = "D:/ASP - Erin/FCST/Dept-Team/FCST_Sales MKT_NBD Team_" + today + ".xlsx"
+file_MKT = "D:/ASP - Erin/Dept-Team/MKT_" + today + ".xlsx"
+file_MKT_Launch = "D:/ASP - Erin/Dept-Team/MKT Launch_" + today + ".xlsx"
+file_APAC_CC = "D:/ASP - Erin/Dept-Team/APAC CC_" + today + ".xlsx"
+file_Customer_Service = "D:/ASP - Erin/Dept-Team/Customer Service_" + today + ".xlsx"
+file_DTS = "D:/ASP - Erin/Dept-Team/DTS_" + today + ".xlsx"
+file_MI = "D:/ASP - Erin/Dept-Team/MI_" + today + ".xlsx"
+file_Sales_MKT1 = "D:/ASP - Erin/Dept-Team/Sales MKT_DMKT_" + today + ".xlsx"
+file_Sales_MKT2 = "D:/ASP - Erin/Dept-Team/Sales MKT_HK_" + today + ".xlsx"
+file_Sales_MKT3 = "D:/ASP - Erin/Dept-Team/Sales MKT_Internal Fleet Car_" + today + ".xlsx"
+file_Sales_MKT4 = "D:/ASP - Erin/Dept-Team/Sales MKT_National Sales_" + today + ".xlsx"
+file_Sales_MKT5 = "D:/ASP - Erin/Dept-Team/Sales MKT_NBD Team_" + today + ".xlsx"
 
 # 创建几个excel的Writer引擎
 writer_new = pd.ExcelWriter(path=file_new_actual, mode='w', engine='xlsxwriter')
@@ -852,50 +867,62 @@ for file_idx in range(len(file_name)):
                 row_data_err_life_fcst = []  # 临时存放错误的idx_row行的数据
                 # 判断idx_row的前两列是否为空
                 if not is_null(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_null_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_null_fcst,
+                                           data_err_fcst,
                                            'Issue/Dept Null Exception', idx_row)
                 if not is_carline(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_carl_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_carl_fcst,
+                                           data_err_fcst,
                                            'Carline Exception', idx_row)
                 if not is_life_cycle(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_life_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_life_fcst,
+                                           data_err_fcst,
                                            'Lifecycle Exception', idx_row)
                 # 判断idx_row的12个月的budget计算总和是否和Total Budget列相等
                 if not calc_total_budget(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_calc_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_calc_fcst,
+                                           data_err_fcst,
                                            'TotalBudget Exception', idx_row)
                 if not is_branding(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_brand_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_brand_fcst,
+                                           data_err_fcst,
                                            'Branding/NonBranding Exception', idx_row)
                 if not is_duplicate(df_asp, path, file_name[file_idx], idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_dupl_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_dupl_fcst,
+                                           data_err_fcst,
                                            'Issue Exception', idx_row)
                 # 判断idx_row的Working/NonWorking列与某几列的关联关系是否符合标准
                 if not validate_team(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_team_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_team_fcst,
+                                           data_err_fcst,
                                            'Team Exception', idx_row)
                 if not validate(df_asp, header_std, idx_row)[0]:
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
+                                           data_err_fcst,
                                            'Sale Funnel Exception', idx_row)
                 elif not validate(df_asp, header_std, idx_row)[1]:
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
+                                           data_err_fcst,
                                            'Category Exception', idx_row)
                 elif not validate(df_asp, header_std, idx_row)[2]:
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
+                                           data_err_fcst,
                                            'Activity Type Exception', idx_row)
                 if not is_ssm(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_ssmc_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_ssmc_fcst,
+                                           data_err_fcst,
                                            'SMM Exception', idx_row)
                 if not validate_kpi(df_asp, header_std, idx_row):
-                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpi_fcst, data_err_fcst,
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpi_fcst,
+                                           data_err_fcst,
                                            'KPI Exception', idx_row)
                 # 符合所有标准的数据格式化后写入Summary文件
                 if is_null(df_asp, header_std, idx_row) and calc_total_budget(df_asp, header_std, idx_row) \
                         and is_branding(df_asp, header_std, idx_row) and validate(df_asp, header_std, idx_row)[0] \
                         and validate(df_asp, header_std, idx_row)[1] and validate(df_asp, header_std, idx_row)[2] \
-                        and is_ssm(df_asp, header_std, idx_row) and validate_kpi(df_asp, header_std, idx_row)\
+                        and is_ssm(df_asp, header_std, idx_row) and validate_kpi(df_asp, header_std, idx_row) \
                         and is_duplicate(df_asp, path, file_name[file_idx], idx_row) \
-                        and is_carline(df_asp, header_std, idx_row) and is_life_cycle(df_asp, header_std, idx_row)\
+                        and is_carline(df_asp, header_std, idx_row) and is_life_cycle(df_asp, header_std, idx_row) \
                         and validate_team(df_asp, header_std, idx_row):
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
