@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="">
+    <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,12 +259,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="665" column="43" selection-start-line="665" selection-start-column="43" selection-end-line="665" selection-end-column="43" />
+            <state relative-caret-position="-1678">
+              <caret line="207" column="17" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="17" />
               <folding>
                 <element signature="e#100#164#0" />
                 <element signature="e#205#341#0" />
                 <element signature="e#381#511#0" />
+                <element signature="e#518#831#0" />
                 <element signature="e#557#1020#0" />
                 <element signature="e#555#699#0" />
                 <element signature="e#656#923#0" />
@@ -309,10 +311,8 @@
                 <element signature="e#6323#6461#0" />
                 <element signature="e#6578#6867#0" />
                 <element signature="e#6693#6850#0" />
-                <element signature="e#7738#9970#0" />
-                <element signature="e#7915#8146#0" />
-                <element signature="e#8479#8600#0" />
-                <element signature="e#9483#9717#0" />
+                <element signature="e#8201#8399#0" />
+                <element signature="e#9807#10036#0" />
                 <element signature="e#6909#14619#0" />
                 <element signature="e#7314#10647#0" />
                 <element signature="e#7514#7884#0" />
@@ -348,6 +348,8 @@
                 <element signature="e#16355#16534#0" />
                 <element signature="e#16386#16534#0" />
                 <element signature="e#16592#16977#0" />
+                <element signature="e#16670#16773#0" />
+                <element signature="e#16874#16977#0" />
                 <element signature="e#17043#17472#0" />
                 <element signature="e#17336#17384#0" />
                 <element signature="e#17389#17434#0" />
@@ -381,7 +383,10 @@
                 <element signature="e#22834#23344#0" />
                 <element signature="e#23377#23882#0" />
                 <element signature="e#24094#24196#0" />
+                <element signature="e#31439#49129#0" />
                 <element signature="e#25885#26111#0" />
+                <element signature="e#31926#49129#0" />
+                <element signature="e#31988#49129#0" />
                 <element signature="e#28809#29458#0" />
                 <element signature="e#26996#27263#0" />
                 <element signature="e#27067#27205#0" />
@@ -395,7 +400,7 @@
                 <element signature="e#28748#28886#0" />
                 <element signature="e#29073#29337#0" />
                 <element signature="e#29144#29281#0" />
-                <element signature="e#29556#29726#0" />
+                <element signature="e#35291#35439#0" />
                 <element signature="e#29783#30071#0" />
                 <element signature="e#29854#29999#0" />
                 <element signature="e#30317#30605#0" />
@@ -404,8 +409,10 @@
                 <element signature="e#30936#31081#0" />
                 <element signature="e#31410#31698#0" />
                 <element signature="e#31481#31626#0" />
-                <element signature="e#31949#32237#0" />
+                <element signature="e#37464#37714#0" />
                 <element signature="e#32020#32165#0" />
+                <element signature="e#34012#34039#0" />
+                <element signature="e#37888#43029#0" />
                 <element signature="e#27019#27192#0" />
                 <element signature="e#38499#38674#0" />
                 <element signature="e#38762#38939#0" />
@@ -419,6 +426,7 @@
                 <element signature="e#28935#29095#0" />
                 <element signature="e#41798#43189#0" />
                 <element signature="e#29738#30531#0" />
+                <element signature="e#43064#49129#0" />
                 <element signature="e#31710#31893#0" />
                 <element signature="e#43215#43394#0" />
                 <element signature="e#43477#43660#0" />
@@ -431,9 +439,22 @@
                 <element signature="e#33451#33632#0" />
                 <element signature="e#33713#33884#0" />
                 <element signature="e#33971#34141#0" />
+                <element signature="e#34743#35650#0" />
                 <element signature="e#34806#35599#0" />
                 <element signature="e#44421#44466#0" />
                 <element signature="e#52839#53447#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="127" column="63" lean-forward="true" selection-start-line="127" selection-start-column="63" selection-end-line="127" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -788,7 +809,6 @@
         <option value="$PROJECT_DIR$/com.xinpeng/udf/__init__.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocal.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/udf/UDF.py" />
-        <option value="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/PathDict.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/vdict" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py" />
@@ -799,6 +819,7 @@
         <option value="$PROJECT_DIR$/com.xinpeng/test/test.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" />
       </list>
     </option>
   </component>
@@ -929,27 +950,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ASPMainLocalV1.0" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="excel-volvo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ASPMainLocalV1.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="excel-volvo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -992,13 +992,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_excel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_excel" />
         <item itemvalue="Python.ASPMainLocalV1.2" />
         <item itemvalue="Python.ASPMainLocalV0.2" />
         <item itemvalue="Python.ASPMainLocalV0.1" />
         <item itemvalue="Python.ASPMainLocalV1.1" />
-        <item itemvalue="Python.ASPMainLocalV1.0" />
       </list>
     </recent_temporary>
   </component>
@@ -1020,11 +1041,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569777512672</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add three processing logic(Team,Carline,Lifecycle) for V1.3">
+      <created>1569831806611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1569831806611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1753" height="954" extended-state="7" />
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12580082" />
@@ -1032,7 +1060,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928312" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49854398" visible="true" weight="0.31105712" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854398" weight="0.31105712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399757" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1048,7 +1076,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add three processing logic(Team,Carline,Lifecycle) for V1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add three processing logic(Team,Carline,Lifecycle) for V1.2" />
+    <MESSAGE value="add three processing logic(Team,Carline,Lifecycle) for V1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add three processing logic(Team,Carline,Lifecycle) for V1.3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/email/generator.py">
@@ -1746,16 +1775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="580">
           <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="167" column="93" selection-start-line="167" selection-start-column="93" selection-end-line="167" selection-end-column="93" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2767,14 +2786,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="127" column="63" lean-forward="true" selection-start-line="127" selection-start-column="63" selection-end-line="127" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="665" column="43" selection-start-line="665" selection-start-column="43" selection-end-line="665" selection-end-column="43" />
+        <state relative-caret-position="-1678">
+          <caret line="207" column="17" selection-start-line="207" selection-start-column="4" selection-end-line="207" selection-end-column="17" />
           <folding>
             <element signature="e#100#164#0" />
             <element signature="e#205#341#0" />
             <element signature="e#381#511#0" />
+            <element signature="e#518#831#0" />
             <element signature="e#557#1020#0" />
             <element signature="e#555#699#0" />
             <element signature="e#656#923#0" />
@@ -2820,10 +2850,8 @@
             <element signature="e#6323#6461#0" />
             <element signature="e#6578#6867#0" />
             <element signature="e#6693#6850#0" />
-            <element signature="e#7738#9970#0" />
-            <element signature="e#7915#8146#0" />
-            <element signature="e#8479#8600#0" />
-            <element signature="e#9483#9717#0" />
+            <element signature="e#8201#8399#0" />
+            <element signature="e#9807#10036#0" />
             <element signature="e#6909#14619#0" />
             <element signature="e#7314#10647#0" />
             <element signature="e#7514#7884#0" />
@@ -2859,6 +2887,8 @@
             <element signature="e#16355#16534#0" />
             <element signature="e#16386#16534#0" />
             <element signature="e#16592#16977#0" />
+            <element signature="e#16670#16773#0" />
+            <element signature="e#16874#16977#0" />
             <element signature="e#17043#17472#0" />
             <element signature="e#17336#17384#0" />
             <element signature="e#17389#17434#0" />
@@ -2892,7 +2922,10 @@
             <element signature="e#22834#23344#0" />
             <element signature="e#23377#23882#0" />
             <element signature="e#24094#24196#0" />
+            <element signature="e#31439#49129#0" />
             <element signature="e#25885#26111#0" />
+            <element signature="e#31926#49129#0" />
+            <element signature="e#31988#49129#0" />
             <element signature="e#28809#29458#0" />
             <element signature="e#26996#27263#0" />
             <element signature="e#27067#27205#0" />
@@ -2906,7 +2939,7 @@
             <element signature="e#28748#28886#0" />
             <element signature="e#29073#29337#0" />
             <element signature="e#29144#29281#0" />
-            <element signature="e#29556#29726#0" />
+            <element signature="e#35291#35439#0" />
             <element signature="e#29783#30071#0" />
             <element signature="e#29854#29999#0" />
             <element signature="e#30317#30605#0" />
@@ -2915,8 +2948,10 @@
             <element signature="e#30936#31081#0" />
             <element signature="e#31410#31698#0" />
             <element signature="e#31481#31626#0" />
-            <element signature="e#31949#32237#0" />
+            <element signature="e#37464#37714#0" />
             <element signature="e#32020#32165#0" />
+            <element signature="e#34012#34039#0" />
+            <element signature="e#37888#43029#0" />
             <element signature="e#27019#27192#0" />
             <element signature="e#38499#38674#0" />
             <element signature="e#38762#38939#0" />
@@ -2930,6 +2965,7 @@
             <element signature="e#28935#29095#0" />
             <element signature="e#41798#43189#0" />
             <element signature="e#29738#30531#0" />
+            <element signature="e#43064#49129#0" />
             <element signature="e#31710#31893#0" />
             <element signature="e#43215#43394#0" />
             <element signature="e#43477#43660#0" />
@@ -2942,6 +2978,7 @@
             <element signature="e#33451#33632#0" />
             <element signature="e#33713#33884#0" />
             <element signature="e#33971#34141#0" />
+            <element signature="e#34743#35650#0" />
             <element signature="e#34806#35599#0" />
             <element signature="e#44421#44466#0" />
             <element signature="e#52839#53447#0" />

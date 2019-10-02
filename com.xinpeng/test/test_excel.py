@@ -123,7 +123,10 @@ print(len(header_err))
 print('File Name'.replace(' ','').upper() in str(list(['File Name', 'Exception Type', 'Index', 'Issue'])).replace(' ','').upper())
 
 today = str(datetime.date.today()).replace('-', '')
-
+# print("MEDIATEAM" in ["ABBMEDIATEAM"])
+print(str(list(['Fleet Team', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
+print('Fleet Team'.replace(' ', '').upper() in str(list(['Fleet', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
+print('media team'.replace(' ', '').upper() in ['TRADITIONALMEDIATEAM','DIDMEDIATEAM'])
 path = "D:/ASP - Erin/Raw Data/"
 file_path_a = "D:/ASP - Erin/FCST/Data&Log/"
 file_path_b = "D:/ASP - Erin/Header Error/"

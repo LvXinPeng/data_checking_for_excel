@@ -209,12 +209,11 @@ def validate_team(df, header, row_idx):
     validation = False
     if str(df[header_std[1]][row_idx]).replace(' ', '').upper() == 'MKT' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in str(list(['Traditional Media Team', 'Digital Media Team', 'Social Media Team', 'CRM Team', 'Event Team',
-                         'Public Relationship', 'Creative Production', 'Digital Production', 'Strategy Team',
-                         'Launch Team', 'CS MKT'])).replace(' ', '').upper():
+            in ['TRADITIONALMEDIATEAM','DIGITALMEDIATEAM','SOCIALMEDIATEAM','CRMTEAM','EVENTTEAM','PUBLICRELATIONSHIP',
+                'CREATIVEPRODUCTION','DIGITALPRODUCTION','STRATEGYTEAM','LAUNCHTEAM','CSMKT']:
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'MKTLAUNCH' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'MKTLAUNCH':
+            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'LAUNCHTEAM':
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'APACCCBRANDING' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'APACCCBRANDING':
@@ -224,8 +223,7 @@ def validate_team(df, header, row_idx):
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'CUSTOMERSERVICE' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in str(list(['CS Event', 'Customer Care', 'Service offers', 'Service Efficiency',
-                         'Regional Collaboration'])).replace(' ', '').upper():
+            in ['CSEVENT','CUSTOMERCARE','SERVICEOFFERS','SERVICEEFFICIENCY','REGIONALCOLLABORATION']:
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'DTS' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'DTS':
@@ -235,22 +233,9 @@ def validate_team(df, header, row_idx):
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in str(
-        list(['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team',
-              'West Region Team', 'ZheJiang Region Team', 'Exhibition', 'Fleet Team', 'Used Car Team',
-              'Finance Service Team'])).replace(' ', '').upper():
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
-            df[header[2]][row_idx]).replace(' ', '').upper() in ['HK']:
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
-            df[header[2]][row_idx]).replace(' ', '').upper() in ['INTERNALFLEETCAR']:
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
-            df[header[2]][row_idx]).replace(' ', '').upper() in ['NATIONALSALES']:
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] and str(
-            df[header[2]][row_idx]).replace(' ', '').upper() in ['NBDTEAM']:
+            in ['DMKTCENTRALTEAM','EXHIBITION','EASTREGIONTEAM','NORTHREGIONTEAM','SOUTHREGIONTEAM','WESTREGIONTEAM',
+                'ZHEJIANGREGIONTEAM','HK','FLEETTEAM','USEDCARTEAM','NATIONALSALES','INTERNALFLEETCAR',
+                'FINANCIALSERVICETEAM']:
         validation = True
     return validation
 
@@ -605,7 +590,7 @@ header_std_plus = ['Issue', 'Dept', 'Team', 'Carline', 'Lifecycle', 'Branding/No
 header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', 'Carline', 'Lifecycle',
               'Branding/NonBranding', 'Working/NonWorking', 'Sale funnel', 'Category', 'Activity type', 'Activity',
               'KPI Prospects', 'KPI Leads', 'KPI Inquiry', 'KPI Order', 'KPI Others', 'SMM Campaign Code (Y/N)',
-              'SC No.', ' SC Name', 'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
+              'SC NO.', ' SC Name', 'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
               'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)']
 # 异常header excel header
 err_header_err = ['File Name', 'Exception Type']
@@ -751,10 +736,10 @@ for file_idx in range(len(file_name)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_MI.append(df_asp[header_std[idx_col]][idx_row])
                 data_MI.append(row_data_MI)
-            elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
-                    df_asp[header_std[2]][idx_row]).replace(' ', '').upper() in str(
-                list(['DMKT Central Team', 'Exhibition', 'East Region Team', 'North Region Team', 'South Region Team',
-                      'West Region Team', 'ZheJiang Region Team'])).replace(' ', '').upper():
+            elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
+                    and str(df_asp[header_std[2]][idx_row]).replace(' ', '').upper() \
+                    in ['DMKTCENTRALTEAM','EXHIBITION','EASTREGIONTEAM','NORTHREGIONTEAM','SOUTHREGIONTEAM',
+                        'WESTREGIONTEAM','ZHEJIANGREGIONTEAM']:
                 for idx_col in range(len(header_std)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT1.append(df_asp[header_std[idx_col]][idx_row])
@@ -777,8 +762,9 @@ for file_idx in range(len(file_name)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT4.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT4.append(row_data_Sales_MKT4)
-            elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
-                    df_asp[header_std[2]][idx_row]).replace(' ', '').upper() in ['NBDTEAM']:
+            elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
+                    and str(df_asp[header_std[2]][idx_row]).replace(' ', '').upper() \
+                    in ['FLEETTEAM','USEDCARTEAM','FINANCIALSERVICETEAM']:
                 for idx_col in range(len(header_std)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT5.append(df_asp[header_std[idx_col]][idx_row])
