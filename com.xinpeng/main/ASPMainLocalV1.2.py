@@ -25,7 +25,7 @@ def is_ssm(df, header, row_idx):
         if str(df[header[16]][row_idx]).strip() in ['N.A.'] \
                 and str(df[header[17]][row_idx]) not in ['N.A.', '0']:
             is_ssmc = False
-        elif str(df[header[16]][row_idx]).strip() in ['Y', 'y', 'N', 'n'] \
+        elif str(df[header[16]][row_idx]).strip() in ['Y', 'y'] \
                 and str(df[header[17]][row_idx]) in ['N.A.', '0']:
             is_ssmc = False
     return is_ssmc
@@ -209,8 +209,9 @@ def validate_team(df, header, row_idx):
     validation = False
     if str(df[header_std[1]][row_idx]).replace(' ', '').upper() == 'MKT' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['TRADITIONALMEDIATEAM','DIGITALMEDIATEAM','SOCIALMEDIATEAM','CRMTEAM','EVENTTEAM','PUBLICRELATIONSHIP',
-                'CREATIVEPRODUCTION','DIGITALPRODUCTION','STRATEGYTEAM','LAUNCHTEAM','CSMKT']:
+            in ['TRADITIONALMEDIATEAM', 'DIGITALMEDIATEAM', 'SOCIALMEDIATEAM', 'CRMTEAM', 'EVENTTEAM',
+                'PUBLICRELATIONSHIP',
+                'CREATIVEPRODUCTION', 'DIGITALPRODUCTION', 'STRATEGYTEAM', 'LAUNCHTEAM', 'CSMKT']:
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'MKTLAUNCH' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'LAUNCHTEAM':
@@ -223,7 +224,7 @@ def validate_team(df, header, row_idx):
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'CUSTOMERSERVICE' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['CSEVENT','CUSTOMERCARE','SERVICEOFFERS','SERVICEEFFICIENCY','REGIONALCOLLABORATION']:
+            in ['CSEVENT', 'CUSTOMERCARE', 'SERVICEOFFERS', 'SERVICEEFFICIENCY', 'REGIONALCOLLABORATION']:
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'DTS' \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'DTS':
@@ -233,8 +234,9 @@ def validate_team(df, header, row_idx):
         validation = True
     elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] \
             and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['DMKTCENTRALTEAM','EXHIBITION','EASTREGIONTEAM','NORTHREGIONTEAM','SOUTHREGIONTEAM','WESTREGIONTEAM',
-                'ZHEJIANGREGIONTEAM','HK','FLEETTEAM','USEDCARTEAM','NATIONALSALES','INTERNALFLEETCAR',
+            in ['DMKTCENTRALTEAM', 'EXHIBITION', 'EASTREGIONTEAM', 'NORTHREGIONTEAM', 'SOUTHREGIONTEAM',
+                'WESTREGIONTEAM',
+                'ZHEJIANGREGIONTEAM', 'HK', 'FLEETTEAM', 'USEDCARTEAM', 'NATIONALSALES', 'INTERNALFLEETCAR',
                 'FINANCIALSERVICETEAM']:
         validation = True
     return validation
@@ -400,6 +402,22 @@ def is_number(s):
     return False
 
 
+def is_num_kpi(df, header, row_idx):
+    flag_prospects = True
+    flag_leads = True
+    flag_inquiry = True
+    flag_order = True
+    if not is_number(str(df[header[11]][row_idx])):
+        flag_prospects = False
+    if not is_number(str(df[header[12]][row_idx])):
+        flag_leads = False
+    if not is_number(str(df[header[13]][row_idx])):
+        flag_inquiry = False
+    if not is_number(str(df[header[14]][row_idx])):
+        flag_order = False
+    return [flag_prospects, flag_leads, flag_inquiry, flag_order]
+
+
 def to_float(df, header, col_idx, row_idx):
     if 20 <= col_idx <= 32:
         if not is_number(str(df[header[col_idx]][row_idx])):
@@ -407,17 +425,16 @@ def to_float(df, header, col_idx, row_idx):
         try:
             df[header[col_idx]][row_idx] = float(df[header[col_idx]][row_idx])
         except ValueError:
-            pass
+            df[header[col_idx]][row_idx] = float(0.0)
 
 
 def to_int(df, header, col_idx, row_idx):
-    if 11 <= col_idx <= 15:
-        if not is_number(str(df[header[col_idx]][row_idx])):
-            df[header[col_idx]][row_idx] = 0
-        try:
-            df[header[col_idx]][row_idx] = int(df[header[col_idx]][row_idx])
-        except ValueError:
-            pass
+    if 11 <= col_idx <= 14:
+        if is_number(str(df[header[col_idx]][row_idx])):
+            try:
+                df[header[col_idx]][row_idx] = int(df[header[col_idx]][row_idx])
+            except ValueError:
+                df[header[col_idx]][row_idx] = float(df[header[col_idx]][row_idx])
 
 
 def to_replace(df, header, col_idx, row_idx):
@@ -428,22 +445,28 @@ def to_replace(df, header, col_idx, row_idx):
 
 def to_replace_null(df, header, col_idx, row_idx):
     if col_idx in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 18, 19, 33]:
-        if str(df[header[col_idx]][row_idx]) in ["0", "nan"]:
+        if str(df[header[col_idx]][row_idx]).replace(' ', '') in ["0", "nan", '-', '/', '']:
             df[header[col_idx]][row_idx] = "N.A."
     if col_idx in [11, 12, 13, 14, 17, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]:
-        if str(df[header[col_idx]][row_idx]) in ["0", "nan"]:
+        if str(df[header[col_idx]][row_idx]).replace(' ', '') in ["0", "nan", '-', '/', '']:
             df[header[col_idx]][row_idx] = int(0)
 
 
-def to_split_fcstact(df, header, f_path, row_idx, f_name):
-    flag = True  # True表示Act，False表示FCST
+def is_actual(df, header, f_path, row_idx, f_name):
+    flag = False
     issue_name = f_name.split('.xlsx')[0].replace(f_path, '').split('&')[0].replace(' ', '').upper()
-    if str(df[header[0]][row_idx]).replace(' ', '').upper() == issue_name \
-            and str(df[header[17]][row_idx]) in ['nan', '0', '', ' ']:
-        df[header[17]][row_idx] = 0
-        flag = False
-    # if str(df[header[0]][row_idx]) == 'Rebate':
-    #     flag = True
+    if str(df[header[0]][row_idx]).replace(' ', '').upper() == issue_name and str(df[header[17]][row_idx]) != '0':
+        flag = True
+    elif str(df[header[0]][row_idx]).replace(' ', '').upper() in ['ACT', 'ACTUAL']:
+        flag = True
+    return flag
+
+
+def is_forecast(df, header, f_path, row_idx, f_name):
+    flag = False
+    issue_name = f_name.split('.xlsx')[0].replace(f_path, '').split('&')[0].replace(' ', '').upper()
+    if str(df[header[0]][row_idx]).replace(' ', '').upper() == issue_name:
+        flag = True
     return flag
 
 
@@ -547,7 +570,7 @@ def to_format(writer, data_frame, data, err_col, red_col, gray_col):
                     if 20 <= col_idx <= 32 or 33 <= col_idx <= 38:
                         worksheet.write(row_idx + 1, col_idx, data[row_idx][col_idx], budget_format)
     except IndexError:
-        pass
+        print("hello")
     writer.save()
     writer.close()
 
@@ -696,9 +719,9 @@ for file_idx in range(len(file_name)):
             row_data_Sales_MKT5 = []
             # data clean
             for idx_col in range(len(header_std)):
+                to_replace_null(df_asp, header_std, idx_col, idx_row)
                 to_replace(df_asp, header_std, idx_col, idx_row)
                 to_simplify(df_asp, header_std, idx_row)
-                to_replace_null(df_asp, header_std, idx_col, idx_row)
                 to_upper(df_asp, header_std, idx_row, 5, 'Branding')
                 to_upper(df_asp, header_std, idx_row, 5, 'NonBranding')
                 to_upper(df_asp, header_std, idx_row, 6, 'Working')
@@ -738,8 +761,8 @@ for file_idx in range(len(file_name)):
                 data_MI.append(row_data_MI)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
                     and str(df_asp[header_std[2]][idx_row]).replace(' ', '').upper() \
-                    in ['DMKTCENTRALTEAM','EXHIBITION','EASTREGIONTEAM','NORTHREGIONTEAM','SOUTHREGIONTEAM',
-                        'WESTREGIONTEAM','ZHEJIANGREGIONTEAM']:
+                    in ['DMKTCENTRALTEAM', 'EXHIBITION', 'EASTREGIONTEAM', 'NORTHREGIONTEAM', 'SOUTHREGIONTEAM',
+                        'WESTREGIONTEAM', 'ZHEJIANGREGIONTEAM']:
                 for idx_col in range(len(header_std)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT1.append(df_asp[header_std[idx_col]][idx_row])
@@ -764,15 +787,14 @@ for file_idx in range(len(file_name)):
                 data_Sales_MKT4.append(row_data_Sales_MKT4)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
                     and str(df_asp[header_std[2]][idx_row]).replace(' ', '').upper() \
-                    in ['FLEETTEAM','USEDCARTEAM','FINANCIALSERVICETEAM']:
+                    in ['FLEETTEAM', 'USEDCARTEAM', 'FINANCIALSERVICETEAM']:
                 for idx_col in range(len(header_std)):
                     to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT5.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT5.append(row_data_Sales_MKT5)
             # 符合header标准，遍历文件的所有行，验证行数据
             # data checking
-            if to_split_fcstact(df_asp, header_std, path, idx_row, file_name[file_idx]):
-                # df_asp[header_std[0]][idx_row] = 'Actual'
+            if is_actual(df_asp, header_std, path, idx_row, file_name[file_idx]):
                 row_data = []  # 临时存放符合标准的idx_row行的数据
                 row_data_err = []  # 临时存放错误的idx_row行的数据
                 row_data_err_null = []  # 临时存放错误的idx_row行的数据
@@ -785,6 +807,7 @@ for file_idx in range(len(file_name)):
                 row_data_err_team = []  # 临时存放错误的idx_row行的数据
                 row_data_err_carl = []  # 临时存放错误的idx_row行的数据
                 row_data_err_life = []  # 临时存放错误的idx_row行的数据
+                row_data_err_kpin = []  # 临时存放错误的idx_row行的数据
                 # 判断idx_row的前两列是否为空
                 if not is_null(df_asp, header_std, idx_row):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_null, data_err,
@@ -802,7 +825,22 @@ for file_idx in range(len(file_name)):
                 if not is_branding(df_asp, header_std, idx_row):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_brand, data_err,
                                            'Branding/NonBranding Exception', idx_row)
+                if not is_duplicate(df_asp, path, file_name[file_idx], idx_row):
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_dupl, data_err,
+                                           'Issue Exception', idx_row)
                 # 判断idx_row的Working/NonWorking列与某几列的关联关系是否符合标准
+                if not is_num_kpi(df_asp, header_std, idx_row)[0]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin, data_err,
+                                           'KPI Prospects Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin, data_err,
+                                           'KPI Leads Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin, data_err,
+                                           'KPI Inquiry Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin, data_err,
+                                           'KPI Order Exception', idx_row)
                 if not validate_team(df_asp, header_std, idx_row):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_team, data_err,
                                            'Team Exception', idx_row)
@@ -827,8 +865,10 @@ for file_idx in range(len(file_name)):
                         and validate(df_asp, header_std, idx_row)[1] and validate(df_asp, header_std, idx_row)[2] \
                         and is_ssm(df_asp, header_std, idx_row) and validate_kpi(df_asp, header_std, idx_row) \
                         and is_carline(df_asp, header_std, idx_row) and is_life_cycle(df_asp, header_std, idx_row) \
-                        and validate_team(df_asp, header_std, idx_row):
-                    # df_asp[header_std[0]][idx_row] = 'Actual'
+                        and validate_team(df_asp, header_std, idx_row) and is_num_kpi(df_asp, header_std, idx_row)[0] \
+                        and is_num_kpi(df_asp, header_std, idx_row)[1] and is_num_kpi(df_asp, header_std, idx_row)[2] \
+                        and is_num_kpi(df_asp, header_std, idx_row)[3] \
+                        and is_duplicate(df_asp, path, file_name[file_idx], idx_row):
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
                         data_log.append(df_asp[header_std[0]][idx_row])
@@ -838,7 +878,7 @@ for file_idx in range(len(file_name)):
                     row_data.append(calc_q_budget(df_asp, header_std, idx_row)[3])
                     row_data.append(calc_ytd_budget(df_asp, header_std, idx_row, cur_month))
                     data_new.append(row_data)
-            else:
+            if is_forecast(df_asp, header_std, path, idx_row, file_name[file_idx]):
                 row_data = []  # 临时存放符合标准的idx_row行的数据
                 row_data_err = []  # 临时存放错误的idx_row行的数据
                 row_data_err_null_fcst = []  # 临时存放错误的idx_row行的数据
@@ -851,6 +891,7 @@ for file_idx in range(len(file_name)):
                 row_data_err_team_fcst = []  # 临时存放错误的idx_row行的数据
                 row_data_err_carl_fcst = []  # 临时存放错误的idx_row行的数据
                 row_data_err_life_fcst = []  # 临时存放错误的idx_row行的数据
+                row_data_err_kpin_fcst = []  # 临时存放错误的idx_row行的数据
                 # 判断idx_row的前两列是否为空
                 if not is_null(df_asp, header_std, idx_row):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_null_fcst,
@@ -873,6 +914,22 @@ for file_idx in range(len(file_name)):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_brand_fcst,
                                            data_err_fcst,
                                            'Branding/NonBranding Exception', idx_row)
+                if not is_num_kpi(df_asp, header_std, idx_row)[0]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
+                                           data_err_fcst,
+                                           'KPI Prospects Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
+                                           data_err_fcst,
+                                           'KPI Leads Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
+                                           data_err_fcst,
+                                           'KPI Inquiry Exception', idx_row)
+                elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
+                    add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
+                                           data_err_fcst,
+                                           'KPI Order Exception', idx_row)
                 if not is_duplicate(df_asp, path, file_name[file_idx], idx_row):
                     add_error_log_and_data(file_name[file_idx], df_asp, header_std, row_data_err_dupl_fcst,
                                            data_err_fcst,
@@ -909,7 +966,9 @@ for file_idx in range(len(file_name)):
                         and is_ssm(df_asp, header_std, idx_row) and validate_kpi(df_asp, header_std, idx_row) \
                         and is_duplicate(df_asp, path, file_name[file_idx], idx_row) \
                         and is_carline(df_asp, header_std, idx_row) and is_life_cycle(df_asp, header_std, idx_row) \
-                        and validate_team(df_asp, header_std, idx_row):
+                        and validate_team(df_asp, header_std, idx_row) and is_num_kpi(df_asp, header_std, idx_row)[0] \
+                        and is_num_kpi(df_asp, header_std, idx_row)[1] and is_num_kpi(df_asp, header_std, idx_row)[2] \
+                        and is_num_kpi(df_asp, header_std, idx_row)[3]:
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
                         data_log.append(df_asp[header_std[0]][idx_row])
