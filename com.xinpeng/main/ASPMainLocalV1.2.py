@@ -59,26 +59,11 @@ def is_branding(df, header, row_idx):
 def calc_total_budget(df, header, row_idx):
     temp = []
     for col_idx in range(12):
-        if str(df[header[col_idx + 20]][row_idx]) == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
+        try:
+            temp.append(float(df[header[col_idx + 20]][row_idx]))
+        except ValueError:
             temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]) == 'nan':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        else:
-            try:
-                temp.append(float(df[header[col_idx + 20]][row_idx]))
-            except ValueError:
-                temp.append(0.0)
     total_budget = sum(list(map(float, temp)))
-    if not is_number(str(df[header[32]][row_idx])) or str(df[header[32]][row_idx]) in ['', ' ', 'nan']:
-        df[header[32]][row_idx] = 0
     is_eq = total_budget == float(df[header[32]][row_idx]) or abs(total_budget - float(df[header[32]][row_idx])) <= 1
     return is_eq
 
@@ -89,80 +74,28 @@ def calc_q_budget(df, header, row_idx):
     temp_q3 = []
     temp_q4 = []
     for col_idx in range(3):
-        if str(df[header[col_idx + 20]][row_idx]) == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
+        try:
+            temp_q1.append(float(df[header[col_idx + 20]][row_idx]))
+        except ValueError:
             temp_q1.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp_q1.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp_q1.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]) == 'nan':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp_q1.append(0.0)
-        else:
-            try:
-                temp_q1.append(float(df[header[col_idx + 20]][row_idx]))
-            except ValueError:
-                temp_q1.append(0.0)
 
     for col_idx in range(3):
-        if str(df[header[col_idx + 23]][row_idx]) == '':
-            df[header[col_idx + 23]][row_idx] = 0.0
+        try:
+            temp_q2.append(float(df[header[col_idx + 23]][row_idx]))
+        except ValueError:
             temp_q2.append(0.0)
-        elif str(df[header[col_idx + 23]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 23]][row_idx] = 0.0
-            temp_q2.append(0.0)
-        elif str(df[header[col_idx + 23]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 23]][row_idx] = 0.0
-            temp_q2.append(0.0)
-        elif str(df[header[col_idx + 23]][row_idx]) == 'nan':
-            df[header[col_idx + 23]][row_idx] = 0.0
-            temp_q2.append(0.0)
-        else:
-            try:
-                temp_q2.append(float(df[header[col_idx + 23]][row_idx]))
-            except ValueError:
-                temp_q2.append(0.0)
 
     for col_idx in range(3):
-        if str(df[header[col_idx + 26]][row_idx]) == '':
-            df[header[col_idx + 26]][row_idx] = 0.0
+        try:
+            temp_q3.append(float(df[header[col_idx + 26]][row_idx]))
+        except ValueError:
             temp_q3.append(0.0)
-        elif str(df[header[col_idx + 26]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 26]][row_idx] = 0.0
-            temp_q3.append(0.0)
-        elif str(df[header[col_idx + 26]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 26]][row_idx] = 0.0
-            temp_q3.append(0.0)
-        elif str(df[header[col_idx + 26]][row_idx]) == 'nan':
-            df[header[col_idx + 26]][row_idx] = 0.0
-            temp_q3.append(0.0)
-        else:
-            try:
-                temp_q3.append(float(df[header[col_idx + 26]][row_idx]))
-            except ValueError:
-                temp_q3.append(0.0)
 
     for col_idx in range(3):
-        if str(df[header[col_idx + 29]][row_idx]) == '':
-            df[header[col_idx + 29]][row_idx] = 0.0
+        try:
+            temp_q4.append(float(df[header[col_idx + 29]][row_idx]))
+        except ValueError:
             temp_q4.append(0.0)
-        elif str(df[header[col_idx + 29]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 29]][row_idx] = 0.0
-            temp_q4.append(0.0)
-        elif str(df[header[col_idx + 29]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 29]][row_idx] = 0.0
-            temp_q4.append(0.0)
-        elif str(df[header[col_idx + 29]][row_idx]) == 'nan':
-            df[header[col_idx + 29]][row_idx] = 0.0
-            temp_q4.append(0.0)
-        else:
-            try:
-                temp_q4.append(float(df[header[col_idx + 29]][row_idx]))
-            except ValueError:
-                temp_q4.append(0.0)
     total_q1_budget = sum(list(map(float, temp_q1)))
     total_q2_budget = sum(list(map(float, temp_q2)))
     total_q3_budget = sum(list(map(float, temp_q3)))
@@ -173,23 +106,10 @@ def calc_q_budget(df, header, row_idx):
 def calc_ytd_budget(df, header, row_idx, month):
     temp = []
     for col_idx in range(month):
-        if str(df[header[col_idx + 20]][row_idx]) == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
+        try:
+            temp.append(float(df[header[col_idx + 20]][row_idx]))
+        except ValueError:
             temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]).replace('-', '').replace(' ', '') == '':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        elif str(df[header[col_idx + 20]][row_idx]) == 'nan':
-            df[header[col_idx + 20]][row_idx] = 0.0
-            temp.append(0.0)
-        else:
-            try:
-                temp.append(float(df[header[col_idx + 20]][row_idx]))
-            except ValueError:
-                temp.append(0.0)
     total_ytd_budget = sum(list(map(float, temp)))
     return total_ytd_budget
 
