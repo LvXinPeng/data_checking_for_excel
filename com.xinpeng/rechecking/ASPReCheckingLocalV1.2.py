@@ -557,6 +557,7 @@ def add_summary(file_name, header, data):
             to_int(df_summary, header, idx_col, idx_row)
             row_data.append(df_summary[header[idx_col]][idx_row])
         data.append(row_data)
+    os.chmod(file_name, stat.S_IWRITE)
 
 
 start = time.time()
@@ -611,11 +612,11 @@ file_path_d = "D:/ASP - Erin/Actual/Data&Log/"
 # 几个生成的excel路径及文件名
 today = str(datetime.date.today()).replace('-', '')
 file_log = "D:/ASP - Erin/Log.xlsx"
-file_new_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Summary_" + today + "2.xlsx"
-file_new_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Summary_" + today + "2.xlsx"
-file_err_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Error_" + today + "2.xlsx"
-file_err_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Error_" + today + "2.xlsx"
-file_header_err = "D:/ASP - Erin/Header Error/Header Error_" + today + "2.xlsx"
+file_new_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Summary.xlsx"
+file_new_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Summary.xlsx"
+file_err_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Error.xlsx"
+file_err_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Error.xlsx"
+file_header_err = "D:/ASP - Erin/Header Error/Header Error.xlsx"
 # 创建几个excel的Writer引擎
 writer_new_actual = pd.ExcelWriter(path=file_new_actual, mode='w', engine='xlsxwriter')
 writer_new_fcst = pd.ExcelWriter(path=file_new_fcst, mode='w', engine='xlsxwriter')
