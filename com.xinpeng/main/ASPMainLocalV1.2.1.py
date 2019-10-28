@@ -32,20 +32,43 @@ def is_ssm(df, header, row_idx):
     return is_ssmc
 
 
+def read_dept(std):
+    result = []
+    for item in list(std.columns):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
+def read_std(std):
+    result = []
+    for item in list(std[std.columns[0]]):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
+def read_sub_std(std, col):
+    result = []
+    col_upper = str(col)[0].upper() + str(col)[1:]
+    for item in list(std[col_upper.strip()]):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
 def is_life_cycle(df, header, row_idx):
     is_life = False
-    if str(df[header[4]][row_idx]).replace(' ', '').upper() \
-            in str(list(['Launch', 'Sustain', 'MY Change'])).replace(' ', '').upper():
+    std = read_std(lifecycle_std)
+    if str(df[header[4]][row_idx]).replace(' ', '').upper() in std:
         is_life = True
     return is_life
 
 
 def is_carline(df, header, row_idx):
     is_car = False
-    if str(df[header[3]][row_idx]).replace(' ', '').upper() \
-            in str(list(['XC90 (V526)', 'XC60 (K426)', 'XC40 (V316)', 'XC40 (K316)', 'S90L', 'S60', 'S60L', 'V90CC',
-                         'V60', 'V60CC', 'V40', 'V40CC', 'S90 Excellence', 'XC90 Excellence', 'Polestar',
-                         'S90 Ambiance', 'XC90 Ambiance', 'Mix Carline', 'Customer Service'])).replace(' ', '').upper():
+    std = read_std(carline_std)
+    if str(df[header[3]][row_idx]).replace(' ', '').upper() in std:
         is_car = True
     return is_car
 
@@ -128,38 +151,10 @@ def get_month(f_path, f_name):
 
 def validate_team(df, header, row_idx):
     validation = False
-    if str(df[header_std[1]][row_idx]).replace(' ', '').upper() == 'MKT' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['TRADITIONALMEDIATEAM', 'DIGITALMEDIATEAM', 'SOCIALMEDIATEAM', 'CRMTEAM', 'EVENTTEAM',
-                'PUBLICRELATIONSHIP',
-                'CREATIVEPRODUCTION', 'DIGITALPRODUCTION', 'STRATEGYTEAM', 'LAUNCHTEAM', 'CSMKT']:
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'MKTLAUNCH' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'LAUNCHTEAM':
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'APACCCBRANDING' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'APACCCBRANDING':
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'APACCC' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'APACCC':
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'CUSTOMERSERVICE' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['CSEVENT', 'CUSTOMERCARE', 'SERVICEOFFERS', 'SERVICEEFFICIENCY', 'REGIONALCOLLABORATION']:
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'DTS' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'DTS':
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() == 'MI' \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() == 'MI':
-        validation = True
-    elif str(df[header[1]][row_idx]).replace(' ', '').upper() in ['SALESMKT'] \
-            and str(df[header[2]][row_idx]).replace(' ', '').upper() \
-            in ['DMKTCENTRALTEAM', 'EXHIBITION', 'EASTREGIONTEAM', 'NORTHREGIONTEAM', 'SOUTHREGIONTEAM',
-                'WESTREGIONTEAM',
-                'ZHEJIANGREGIONTEAM', 'HK', 'FLEETTEAM', 'USEDCARTEAM', 'NATIONALSALES', 'INTERNALFLEETCAR',
-                'FINANCIALSERVICETEAM']:
-        validation = True
+    if str(df[header[1]][row_idx]).replace(' ', '').upper() in read_dept(dept_std):
+        if str(df[header[2]][row_idx]).replace(' ', '').upper() \
+                in read_sub_std(dept_std, df[header[1]][row_idx]):
+            validation = True
     return validation
 
 
@@ -167,117 +162,25 @@ def validate(df, header, row_idx):
     validation_sale = False
     validation_cate = False
     validation_acti = False
-    for col_idx in range(10):
-        to_replace(df, header, col_idx, row_idx)
+    std_working = read_std(working_std)  # ['Awareness', 'Consideration', 'Opinion']
     if str(df[header[6]][row_idx]).replace(' ', '').upper() == 'NONWORKING' \
-            and str(df[header[7]][row_idx]).replace(' ', '').upper() \
-            not in str(list(['Awareness', 'Consideration', 'Opinion'])).strip().upper():
+            and str(df[header[7]][row_idx]).replace(' ', '').upper() not in std_working:
         df[header[6]][row_idx] = 'NonWorking'
         validation_sale = True
-        if str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Agency Fee'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(list(
-                    ['Media Agency', 'Event Agency', 'Creative production Agency', 'Social Agency', 'CRM Agency',
-                     'PR Agency', 'Experimental Agency', 'Digital production Agency'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Marketing Audits'])).replace(' ', '').upper():
+        if str(df[header[8]][row_idx]).replace(' ', '').upper() \
+                in read_sub_std(nonworking_std, 'Category'):
             validation_cate = True
             if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Marketing Audits'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Production'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(list(
-                    ['Production cost (origination)', 'Production cost (adaption, transcation, repurposing)',
-                     'SEO'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Market Intelligence'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(
-                    list(['Market Research (consumer insight)', 'Business Intelligence'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Infrastructure Development'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['MKT system development'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Meetings'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(
-                    list(['Dealer Conference', 'Regional Meetings'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Operational Cost'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Car cost running (depreciation)', 'System (platform) maintenance', 'DTS'])). \
-                    replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Celebrity'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Celebrity'])).replace(' ', '').upper():
+                    in read_sub_std(nonworking_std, df[header[8]][row_idx]):
                 validation_acti = True
     elif str(df[header[6]][row_idx]).replace(' ', '').upper() == 'WORKING' \
-            and str(df[header[7]][row_idx]).replace(' ', '').upper() \
-            in str(list(['Awareness', 'Consideration', 'Opinion'])).strip().upper():
+            and str(df[header[7]][row_idx]).replace(' ', '').upper() in std_working:
         validation_sale = True
         if str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Traditional Media'])).replace(' ', '').upper():
+                in read_sub_std(working_std, 'Category'):
             validation_cate = True
             if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['TV', 'Radio', 'Newspaper & Magazine', 'Cinema', 'OOH'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Digital Media'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Vertical', 'Vedio', 'News & Portal', 'SEM', 'Others'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Social Media'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Social Media'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['CRM'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['CRM Campaign'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Call Center'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Consumer inbound & outbound'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['Event'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(list(
-                    ['Global Event', 'Test Drive', 'Autoshow', 'Product Display', 'Launch Campaign', 'Group Buy',
-                     'Owner experience event', 'Seasonal Campaign', 'Cyber Campaign', 'Delivery Ceremony',
-                     'Used car campaign', 'Plant Visit'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Public Relationship'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['MY change communication', 'New product communication', 'Event communication'])). \
-                    replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() in str(list(['POSM'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() in str(
-                    list(['POSM', 'Customer Magazine', 'Dealer opening support'])).replace(' ', '').upper():
-                validation_acti = True
-        elif str(df[header[8]][row_idx]).replace(' ', '').upper() \
-                in str(list(['Sponsorship'])).replace(' ', '').upper():
-            validation_cate = True
-            if str(df[header[9]][row_idx]).replace(' ', '').upper() \
-                    in str(list(['Sponsorship'])).replace(' ', '').upper():
+                    in read_sub_std(working_std, df[header[8]][row_idx]):
                 validation_acti = True
     return [validation_sale, validation_cate, validation_acti]
 
@@ -402,13 +305,6 @@ def is_actual_in_fcst(df, header, issue_name, row_idx):
 def is_actual_only(df, header, row_idx):
     flag = False
     if str(df[header[0]][row_idx]).replace(' ', '').upper() in ['ACT', 'ACTUAL']:
-        flag = True
-    return flag
-
-
-def to_dept(df, header, dept_name, row_idx):
-    flag = False
-    if str(df[header[1]][row_idx]).strip() == dept_name:
         flag = True
     return flag
 
@@ -550,8 +446,16 @@ header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', '
               'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)']
 # 异常header excel header
 err_header_err = ['File Name', 'Exception Type']
+file_std = "D:/ASP - Erin/Standard.xlsx"
+df_folder_path = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
+dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
+carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
+lifecycle_std = pd.read_excel(file_std, sheet_name='Lifecycle Standard', dtype=str)
+nonworking_std = pd.read_excel(file_std, sheet_name='NonWorking Standard', dtype=str)
+working_std = pd.read_excel(file_std, sheet_name='Working Standard', dtype=str)
 # 读入待处理文件
-path = "D:/ASP - Erin/Raw Data/"
+folder_path = df_folder_path['Path'][0]
+path = folder_path + "Raw Data/"
 file_name_all = os.listdir(path)
 file_name = []
 for file_idx in range(len(file_name_all)):
@@ -575,11 +479,11 @@ data_Sales_MKT3 = []
 data_Sales_MKT4 = []
 data_Sales_MKT5 = []
 # 创建存放excel的文件夹
-file_path_a = "D:/ASP - Erin/FCST/Data&Log/"
-file_path_b = "D:/ASP - Erin/Header Error/"
-file_path_c = "D:/ASP - Erin/Header Error/Files/"
-file_path_d = "D:/ASP - Erin/Actual/Data&Log/"
-file_path_e = "D:/ASP - Erin/Dept-Team/"
+file_path_a = folder_path + "FCST/Data&Log/"
+file_path_b = folder_path + "Header Error/"
+file_path_c = folder_path + "Header Error/Files/"
+file_path_d = folder_path + "Actual/Data&Log/"
+file_path_e = folder_path + "Dept-Team/"
 mkdir(file_path_a)
 mkdir(file_path_b)
 mkdir(file_path_c)
@@ -587,24 +491,24 @@ mkdir(file_path_d)
 mkdir(file_path_e)
 # 几个生成的excel路径及文件名
 today = str(datetime.date.today()).replace('-', '')
-file_log = "D:/ASP - Erin/Log.xlsx"
-file_new_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Summary.xlsx"
-file_new_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Summary.xlsx"
-file_err_actual = "D:/ASP - Erin/Actual/Data&Log/Act_Error.xlsx"
-file_err_fcst = "D:/ASP - Erin/FCST/Data&Log/FCST_Error.xlsx"
-file_header_err = "D:/ASP - Erin/Header Error/Header Error.xlsx"
+file_log = folder_path + "Log.xlsx"
+file_new_actual = folder_path + "Actual/Data&Log/Act_Summary.xlsx"
+file_new_fcst = folder_path + "FCST/Data&Log/FCST_Summary.xlsx"
+file_err_actual = folder_path + "Actual/Data&Log/Act_Error.xlsx"
+file_err_fcst = folder_path + "FCST/Data&Log/FCST_Error.xlsx"
+file_header_err = folder_path + "Header Error/Header Error.xlsx"
 
-file_MKT = "D:/ASP - Erin/Dept-Team/MKT.xlsx"
-file_MKT_Launch = "D:/ASP - Erin/Dept-Team/MKT Launch.xlsx"
-file_APAC_CC = "D:/ASP - Erin/Dept-Team/APAC CC.xlsx"
-file_Customer_Service = "D:/ASP - Erin/Dept-Team/Customer Service.xlsx"
-file_DTS = "D:/ASP - Erin/Dept-Team/DTS.xlsx"
-file_MI = "D:/ASP - Erin/Dept-Team/MI.xlsx"
-file_Sales_MKT1 = "D:/ASP - Erin/Dept-Team/Sales MKT_DMKT.xlsx"
-file_Sales_MKT2 = "D:/ASP - Erin/Dept-Team/Sales MKT_HK.xlsx"
-file_Sales_MKT3 = "D:/ASP - Erin/Dept-Team/Sales MKT_Internal Fleet Car.xlsx"
-file_Sales_MKT4 = "D:/ASP - Erin/Dept-Team/Sales MKT_National Sales.xlsx"
-file_Sales_MKT5 = "D:/ASP - Erin/Dept-Team/Sales MKT_NBD Team.xlsx"
+file_MKT = folder_path + "Dept-Team/MKT.xlsx"
+file_MKT_Launch = folder_path + "Dept-Team/MKT Launch.xlsx"
+file_APAC_CC = folder_path + "Dept-Team/APAC CC.xlsx"
+file_Customer_Service = folder_path + "Dept-Team/Customer Service.xlsx"
+file_DTS = folder_path + "Dept-Team/DTS.xlsx"
+file_MI = folder_path + "Dept-Team/MI.xlsx"
+file_Sales_MKT1 = folder_path + "Dept-Team/Sales MKT_DMKT.xlsx"
+file_Sales_MKT2 = folder_path + "Dept-Team/Sales MKT_HK.xlsx"
+file_Sales_MKT3 = folder_path + "Dept-Team/Sales MKT_Internal Fleet Car.xlsx"
+file_Sales_MKT4 = folder_path + "Dept-Team/Sales MKT_National Sales.xlsx"
+file_Sales_MKT5 = folder_path + "Dept-Team/Sales MKT_NBD Team.xlsx"
 
 # 创建几个excel的Writer引擎
 writer_new = pd.ExcelWriter(path=file_new_actual, mode='w', engine='xlsxwriter')
@@ -664,22 +568,18 @@ for file_idx in range(len(file_name)):
 
             if str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'MKT':
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_MKT.append(df_asp[header_std[idx_col]][idx_row])
                 data_MKT.append(row_data_MKT)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'MKTLAUNCH':
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_MKT_Launch.append(df_asp[header_std[idx_col]][idx_row])
                 data_MKT_Launch.append(row_data_MKT_Launch)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'APACCC':
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_APAC_CC.append(df_asp[header_std[idx_col]][idx_row])
                 data_APAC_CC.append(row_data_APAC_CC)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'CUSTOMERSERVICE':
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Customer_Service.append(df_asp[header_std[idx_col]][idx_row])
                 data_Customer_Service.append(row_data_Customer_Service)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'DTS':
@@ -689,7 +589,6 @@ for file_idx in range(len(file_name)):
                 data_DTS.append(row_data_DTS)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() == 'MI':
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_MI.append(df_asp[header_std[idx_col]][idx_row])
                 data_MI.append(row_data_MI)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
@@ -697,32 +596,27 @@ for file_idx in range(len(file_name)):
                     in ['DMKTCENTRALTEAM', 'EXHIBITION', 'EASTREGIONTEAM', 'NORTHREGIONTEAM', 'SOUTHREGIONTEAM',
                         'WESTREGIONTEAM', 'ZHEJIANGREGIONTEAM']:
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT1.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT1.append(row_data_Sales_MKT1)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
                     df_asp[header_std[2]][idx_row]).replace(' ', '').upper() in ['HK']:
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT2.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT2.append(row_data_Sales_MKT2)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
                     df_asp[header_std[2]][idx_row]).replace(' ', '').upper() in ['INTERNALFLEETCAR']:
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT3.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT3.append(row_data_Sales_MKT3)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] and str(
                     df_asp[header_std[2]][idx_row]).replace(' ', '').upper() in ['NATIONALSALES']:
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT4.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT4.append(row_data_Sales_MKT4)
             elif str(df_asp[header_std[1]][idx_row]).replace(' ', '').upper() in ['SALESMKT'] \
                     and str(df_asp[header_std[2]][idx_row]).replace(' ', '').upper() \
                     in ['FLEETTEAM', 'USEDCARTEAM', 'FINANCIALSERVICETEAM']:
                 for idx_col in range(len(header_std)):
-                    to_float(df_asp, header_std, idx_col, idx_row)
                     row_data_Sales_MKT5.append(df_asp[header_std[idx_col]][idx_row])
                 data_Sales_MKT5.append(row_data_Sales_MKT5)
             # 符合header标准，遍历文件的所有行，验证行数据 data checking

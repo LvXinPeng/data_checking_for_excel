@@ -1,4 +1,6 @@
 import datetime
+import sys
+import time
 
 import pandas as pd
 import re
@@ -10,8 +12,10 @@ import re
 
 # match = re.search(pattern="^(?:[1-9][0-9]*(?:\.[0-9]+)?|0(?:\.[0-9]+)?)$", string='')
 # print(match)
+import tqdm
+from numpy import nan
 
-
+start = time.time()
 def correct_number(x):
     x = str(x).replace(' ', '')
     if x:
@@ -117,16 +121,16 @@ header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', '
               'SC No.', ' SC Name', 'Description', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct',
               'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)']
 
-print(len(header_std))
-print(len(header_err))
-
-print('File Name'.replace(' ','').upper() in str(list(['File Name', 'Exception Type', 'Index', 'Issue'])).replace(' ','').upper())
+# print(len(header_std))
+# print(len(header_err))
+#
+# print('File Name'.replace(' ','').upper() in str(list(['File Name', 'Exception Type', 'Index', 'Issue'])).replace(' ','').upper())
 
 today = str(datetime.date.today()).replace('-', '')
 # print("MEDIATEAM" in ["ABBMEDIATEAM"])
-print(str(list(['Fleet Team', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
-print('Fleet Team'.replace(' ', '').upper() in str(list(['Fleet', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
-print('media team'.replace(' ', '').upper() in ['TRADITIONALMEDIATEAM','DIDMEDIATEAM'])
+# print(str(list(['Fleet Team', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
+# print('Fleet Team'.replace(' ', '').upper() in str(list(['Fleet', 'Used Car Team', 'Financial Service Team'])).replace(' ', '').upper())
+# print('media team'.replace(' ', '').upper() in ['TRADITIONALMEDIATEAM','DIDMEDIATEAM'])
 path = "D:/ASP - Erin/Raw Data/"
 file_path_a = "D:/ASP - Erin/FCST/Data&Log/"
 file_path_b = "D:/ASP - Erin/Header Error/"
@@ -169,3 +173,125 @@ file_Sales_MKT22 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_HK_" + today + 
 file_Sales_MKT32 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_Internal Fleet Car_" + today + ".xlsx"
 file_Sales_MKT42 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_National Sales_" + today + ".xlsx"
 file_Sales_MKT52 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_NBD Team_" + today + ".xlsx"
+file_std = "D:/ASP - Erin/Standard.xlsx"
+standard = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
+dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
+carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
+lifecycle_std = pd.read_excel(file_std, sheet_name='Lifecycle Standard', dtype=str)
+nonworking_std = pd.read_excel(file_std, sheet_name='NonWorking Standard', dtype=str)
+working_std = pd.read_excel(file_std, sheet_name='Working Standard', dtype=str)
+# dept_team_std = pd.read_excel(file_std, sheet_name='Dept & Team', dtype=str)
+
+def read_dept(std):
+    result = []
+    for item in list(std.columns):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
+def read_std(std):
+    result = []
+    for item in list(std[std.columns[0]]):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
+def read_sub_std(std, col):
+    result = []
+    col_upper = str(col)[0].upper() + str(col)[1:]
+    for item in list(std[col_upper.strip()]):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+
+def read_sub_std_plus(std, col):
+    result = []
+    col_upper = str(col)[0].upper() + str(col)[1:]
+    for item in list(std[col_upper.strip()]):
+        if str(item) != 'nan':
+            result.append(str(item).replace(' ', '').upper())
+    return result
+
+df_folder_path = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
+folder_path = df_folder_path['Path'][0]
+df_issue = pd.read_excel(file_std, sheet_name='Issue Standard', dtype=str)
+issue_list = []
+for item in df_issue['Issue FCST']:
+    if str(item) != 'nan':
+        issue_list.append(item.replace(' ', '').upper())
+# print(issue_list)
+# print(issue_list.remove('ACTUAL'))
+hk = ['SALESMKT', 'HK']
+# print(read_std(standard))
+
+def progress(timeout=10):
+    timeout = round(timeout)
+    if timeout < 1:
+        timeout = 1
+    for i in range(timeout):
+        pro = round((i + 1) / timeout * 100.0)
+        sys.stdout.write("\r%s%s[%d%%] " % ("█" * pro, " " * (100 - pro), pro))
+        sys.stdout.flush()
+        time.sleep(1)
+    # break line
+    print()
+start = time.time()
+
+# progress(int(time.time() - start))
+
+for i in tqdm.trange(100):
+    time.sleep(0.1)
+
+# print('hello')
+sys.stdout.write("%s%d%s" % ("It has taken ", int(time.time() - start)," seconds"))
+sys.stdout.flush()
+# print(read_sub_std(dept_team_std, 'Sales MKT'))
+# print(read_sub_std(dept_team_std, 'Sales MKT'))
+# print(hk[0] in read_dept(dept_team_std))
+# print(hk[1] in read_sub_std(dept_team_std, 'Sales MKT'))
+# print(hk[0] in read_dept(dept_team_std) and hk[1] in read_sub_std(dept_team_std, 'Sales MKT'))
+
+#
+# print(read_std(file_std, 'Carline Standard'))
+# print(read_dept(file_std, 'Department Standard'))
+# for item in read_dept(file_std, 'Department Standard'):
+#     print(read_dept_std(file_std, 'Department Standard', item))
+print('--------------------------------')
+#
+# standard_department = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
+# print(list(standard_department.columns))
+# for i in list(standard_department.columns):
+#     print(i)
+#     print(list(standard_department[i]))
+# print('--------------------------------')
+# standard_carline = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
+# print(list(standard_carline[standard_carline.columns[0]]))
+# print('--------------------------------')
+#
+# standard_lifecycle = pd.read_excel(file_std, sheet_name='Lifecycle Standard', dtype=str)
+# print(list(standard_lifecycle[standard_lifecycle.columns[0]]))
+# print('--------------------------------')
+# standard_working = pd.read_excel(file_std, sheet_name='Working Standard', dtype=str)
+# print(list(standard_working['Sales funnel']))
+# print(list(standard_working['Category']))
+# try:
+#     for i in list(standard_working['Category']):
+#         print(i)
+#         print(list(standard_working[i]))
+# except KeyError:
+#     pass
+# print('--------------------------------')
+# standard_nonworking = pd.read_excel(file_std, sheet_name='NonWorking Standard', dtype=str)
+# print(list(standard_nonworking['Sales funnel']))
+# print(list(standard_nonworking['Category']))
+# try:
+#     for i in list(standard_nonworking['Category']):
+#         print(i)
+#         print(list(standard_nonworking[i]))
+# except KeyError:
+#     pass
+cost = time.time() - start
+print(str(int(cost)) + "s")
