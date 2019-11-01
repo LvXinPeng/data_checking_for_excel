@@ -242,12 +242,12 @@ start = time.time()
 
 # progress(int(time.time() - start))
 
-for i in tqdm.trange(100):
-    time.sleep(0.1)
-
-# print('hello')
-sys.stdout.write("%s%d%s" % ("It has taken ", int(time.time() - start)," seconds"))
-sys.stdout.flush()
+# for i in tqdm.trange(100):
+#     time.sleep(0.1)
+#
+# # print('hello')
+# sys.stdout.write("%s%d%s" % ("It has taken ", int(time.time() - start)," seconds"))
+# sys.stdout.flush()
 # print(read_sub_std(dept_team_std, 'Sales MKT'))
 # print(read_sub_std(dept_team_std, 'Sales MKT'))
 # print(hk[0] in read_dept(dept_team_std))
@@ -295,3 +295,21 @@ print('--------------------------------')
 #     pass
 cost = time.time() - start
 print(str(int(cost)) + "s")
+old_string = 'Sales MKT'
+pattern="[A-Z]"
+if old_string.strip().find(' ') == -1:
+    new_string=re.sub(pattern,lambda x:" "+x.group(0),old_string)
+    print(new_string.strip())
+alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+print(list(old_string))
+print(old_string not in alpha)
+print(old_string.isupper())
+new_str = ''
+for i in range(len(old_string)):
+    if 65 <= ord(old_string[i]) <= 90:
+        if i != 0 and 97 <= ord(old_string[i-1]) <= 122:
+            new_str = new_str + ' '
+        new_str = new_str + old_string[i]
+    else:
+        new_str = new_str + old_string[i]
+print(new_str)
