@@ -437,7 +437,7 @@ header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', '
               'Nov', 'Dec', 'Total Budget', 'Stakeholder(CDSID)']
 # 异常header excel header
 err_header_err = ['File Name', 'Exception Type']
-file_std = "D:/ASP - Erin/Standard.xlsx"
+file_std = "W:/Finance Volvo/BIDataSource/Finance/ASP Database/ASPDataStandardDocument/Standard.xlsx"
 df_folder_path = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
 dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
 carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
@@ -969,4 +969,4 @@ os.chmod(file_new_fcst, stat.S_IREAD)
 os.chmod(file_new_bgt, stat.S_IREAD)
 cost = time.time() - start
 print(str(int(cost)) + "s")
-# os.system("pause")
+os.system("pause")

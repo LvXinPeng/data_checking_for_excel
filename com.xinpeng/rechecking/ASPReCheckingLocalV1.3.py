@@ -483,7 +483,7 @@ header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', '
 # 异常header excel header
 err_header_err = ['File Name', 'Exception Type']
 
-file_std = "W:/Finance Volvo/BIDataSource/Marketing/ASPDataStandardDocument/Standard.xlsx"
+file_std = "W:/Finance Volvo/BIDataSource/Finance/ASP Database/ASPDataStandardDocument/Standard.xlsx"
 df_folder_path = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
 dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
 carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)

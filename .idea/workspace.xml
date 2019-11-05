@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
+            <state relative-caret-position="8108">
               <caret line="710" column="45" selection-start-line="710" selection-start-column="45" selection-end-line="710" selection-end-column="45" />
               <folding>
                 <element signature="e#135#199#0" />
@@ -101,11 +99,23 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8671">
+              <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="465" column="42" lean-forward="true" selection-start-line="465" selection-start-column="42" selection-end-line="465" selection-end-column="42" />
+            <state relative-caret-position="237">
+              <caret line="447" column="9" lean-forward="true" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -116,22 +126,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="929" column="36" selection-start-line="929" selection-start-column="36" selection-end-line="929" selection-end-column="36" />
+            <state relative-caret-position="14036">
+              <caret line="484" selection-start-line="484" selection-end-line="484" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,10 +240,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2277" />
-    <option name="y" value="100" />
-    <option name="width" value="1113" />
-    <option name="height" value="1007" />
+    <option name="x" value="1902" />
+    <option name="y" value="90" />
+    <option name="width" value="1937" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -511,8 +509,24 @@
       <option name="project" value="LOCAL" />
       <updated>1572248991146</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="最终版">
+      <created>1572586733261</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572586733261</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1753" height="1062" extended-state="6" />
@@ -527,9 +541,9 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32867885" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35123524" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501456" side_tool="true" weight="0.3620899" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32867885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -543,7 +557,8 @@
     <MESSAGE value="update the logic for &quot;validate_team&quot; function and &quot;divided by dept and team&quot; function" />
     <MESSAGE value="update the logic" />
     <MESSAGE value="解决重大问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决重大问题" />
+    <MESSAGE value="最终版" />
+    <option name="LAST_COMMIT_MESSAGE" value="最终版" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeam.py">
@@ -2701,7 +2716,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="8671">
           <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -2709,9 +2724,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14036">
+          <caret line="484" selection-start-line="484" selection-end-line="484" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="8108">
           <caret line="710" column="45" selection-start-line="710" selection-start-column="45" selection-end-line="710" selection-end-column="45" />
           <folding>
             <element signature="e#135#199#0" />
@@ -2751,20 +2776,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="929" column="36" selection-start-line="929" selection-start-column="36" selection-end-line="929" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="465" column="42" lean-forward="true" selection-start-line="465" selection-start-column="42" selection-end-line="465" selection-end-column="42" />
+        <state relative-caret-position="237">
+          <caret line="447" column="9" lean-forward="true" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
