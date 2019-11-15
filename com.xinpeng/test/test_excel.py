@@ -14,7 +14,18 @@ import re
 # print(match)
 import tqdm
 from numpy import nan
+from threading import Timer
 
+
+def show():
+    cost = time.time() - start
+    ct = str(cost) + "s"
+    print(ct)
+
+
+# 指定一秒钟之后执行 show 函数
+t = Timer(0.1, show)
+t.start()
 start = time.time()
 def correct_number(x):
     x = str(x).replace(' ', '')
@@ -173,7 +184,7 @@ file_Sales_MKT22 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_HK_" + today + 
 file_Sales_MKT32 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_Internal Fleet Car_" + today + ".xlsx"
 file_Sales_MKT42 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_National Sales_" + today + ".xlsx"
 file_Sales_MKT52 = "D:/ASP - Erin/Actual/Dept-Team/Act_Sales MKT_NBD Team_" + today + ".xlsx"
-file_std = "D:/ASP - Erin/Standard.xlsx"
+file_std = "D:/Projects/Volvo BI Project/ASP - Erin/Standard.xlsx"
 standard = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
 dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
 carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
@@ -293,6 +304,7 @@ print('--------------------------------')
 #         print(list(standard_nonworking[i]))
 # except KeyError:
 #     pass
+
 cost = time.time() - start
 print(str(int(cost)) + "s")
 old_string = 'Sales MKT'

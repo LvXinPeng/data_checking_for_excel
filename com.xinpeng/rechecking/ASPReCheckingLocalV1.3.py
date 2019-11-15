@@ -460,6 +460,11 @@ def add_summary(file_name, header, data):
     os.chmod(file_name, stat.S_IWRITE)
 
 
+def show_time(start_time):
+    print("The program is running and it has been running for %.2fseconds" % (time.time() - start_time))
+
+
+print("The program is starting ... ...")
 start = time.time()
 # 标准数据excel header
 header_std = ['Issue', 'Dept', 'Team', 'Carline', 'Lifecycle', 'Branding/NonBranding',
@@ -483,7 +488,7 @@ header_err = ['File Name', 'Exception Type', 'Index', 'Issue', 'Dept', 'Team', '
 # 异常header excel header
 err_header_err = ['File Name', 'Exception Type']
 
-file_std = "W:/Finance Volvo/BIDataSource/Finance/ASP Database/ASPDataStandardDocument/Standard.xlsx"
+file_std = "W:/Finance Volvo/BIDataSource/Finance/ASP Database/Standard.xlsx"
 df_folder_path = pd.read_excel(file_std, sheet_name='Folder Path', dtype=str)
 dept_std = pd.read_excel(file_std, sheet_name='Department Standard', dtype=str)
 carline_std = pd.read_excel(file_std, sheet_name='Carline Standard', dtype=str)
@@ -506,10 +511,15 @@ for issue_budget in df_issue['Issue Budget']:
         issue_budget_list.append(issue_budget.replace(' ', '').upper())
 
 folder_path = df_folder_path['Path'][0]
-path_fcst = folder_path + "FCST/Data&Log/"
-path_actual = folder_path + "Actual/Data&Log/"
-path_bgt = folder_path + "Budget/Data&Log/"
-path_header = folder_path + "Header Error/Files/"
+test_path = folder_path + "Result/Checking/"
+try:
+    os.listdir(test_path)
+except FileNotFoundError:
+    folder_path = folder_path + '/'
+path_fcst = folder_path + "Result/Checking/FCST/Data&Log/"
+path_actual = folder_path + "Result/Checking/Actual/Data&Log/"
+path_bgt = folder_path + "Result/Checking/Budget/Data&Log/"
+path_header = folder_path + "Result/Checking/Header Error/Files/"
 file_readable_name_actual = []
 file_readable_name_fcst = []
 file_readable_name_bgt = []
@@ -521,7 +531,7 @@ add_files(path_actual, file_writeable_name, 'writeable')
 add_files(path_bgt, file_readable_name_bgt, 'readable')
 add_files(path_bgt, file_writeable_name, 'writeable')
 add_files(path_header, file_writeable_name, 'writeable')
-
+show_time(start)
 data_new_actual = []  # 存储ACT所有的标准数据
 data_new_fcst = []  # 存储FCST所有的标准数据
 data_new_bgt = []  # 存储bgt所有的标准数据
@@ -530,23 +540,23 @@ data_err_fcst = []  # 存储FCST所有的异常数据
 data_err_bgt = []  # 存储bgt所有的异常数据
 data_err_header = []  # 存储所有的header异常数据
 # # 创建存放excel的文件夹
-file_path_a = folder_path + "FCST/Data&Log/"
-file_path_b = folder_path + "Header Error/"
-file_path_c = folder_path + "Header Error/Files/"
-file_path_d = folder_path + "Actual/Data&Log/"
-file_path_e = folder_path + "Budget/Data&Log/"
+file_path_a = folder_path + "Result/Checking/FCST/Data&Log/"
+file_path_b = folder_path + "Result/Checking/Header Error/"
+file_path_c = folder_path + "Result/Checking/Header Error/Files/"
+file_path_d = folder_path + "Result/Checking/Actual/Data&Log/"
+file_path_e = folder_path + "Result/Checking/Budget/Data&Log/"
 # mkdir(file_path_a)
 # mkdir(file_path_b)
 # mkdir(file_path_c)
 # mkdir(file_path_d)
 # 几个生成的excel路径及文件名
-file_new_actual = folder_path + "Actual/Data&Log/Act_Summary.xlsx"
-file_new_fcst = folder_path + "FCST/Data&Log/FCST_Summary.xlsx"
-file_new_bgt = folder_path + "Budget/Data&Log/Budget_Summary.xlsx"
-file_err_actual = folder_path + "Actual/Data&Log/Act_Error.xlsx"
-file_err_fcst = folder_path + "FCST/Data&Log/FCST_Error.xlsx"
-file_err_bgt = folder_path + "Budget/Data&Log/Budget_Error.xlsx"
-file_header_err = folder_path + "Header Error/Header Error.xlsx"
+file_new_actual = folder_path + "Result/Checking/Actual/Data&Log/Act_Summary.xlsx"
+file_new_fcst = folder_path + "Result/Checking/FCST/Data&Log/FCST_Summary.xlsx"
+file_new_bgt = folder_path + "Result/Checking/Budget/Data&Log/Budget_Summary.xlsx"
+file_err_actual = folder_path + "Result/Checking/Actual/Data&Log/Act_Error.xlsx"
+file_err_fcst = folder_path + "Result/Checking/FCST/Data&Log/FCST_Error.xlsx"
+file_err_bgt = folder_path + "Result/Checking/Budget/Data&Log/Budget_Error.xlsx"
+file_header_err = folder_path + "Result/Checking/Header Error/Header Error.xlsx"
 # 创建几个excel的Writer引擎
 writer_new_actual = pd.ExcelWriter(path=file_new_actual, mode='w', engine='xlsxwriter')
 writer_new_fcst = pd.ExcelWriter(path=file_new_fcst, mode='w', engine='xlsxwriter')
@@ -559,10 +569,11 @@ writer_err_header = pd.ExcelWriter(path=file_header_err, mode='w', engine='xlsxw
 add_summary(file_readable_name_fcst[0], header_std_plus, data_new_fcst)
 add_summary(file_readable_name_actual[0], header_std_plus, data_new_actual)
 add_summary(file_readable_name_bgt[0], header_std_plus, data_new_bgt)
-
+show_time(start)
 # 从文件列表遍历读取文件
 for file_idx in range(len(file_writeable_name)):
     df_asp = pd.read_excel(file_writeable_name[file_idx], dtype=str)
+    show_time(start)
     # 判断header是否符合标准
     header_result = str(list(df_asp.columns[0:34])).strip() == str(header_std)
     if not header_result:
@@ -588,17 +599,8 @@ for file_idx in range(len(file_writeable_name)):
             # 符合header标准，遍历文件的所有行，验证行数据 data checking
             if is_forecast(df_asp, header_std, idx_row, issue_fcst_list):
                 row_data = []  # 临时存放符合标准的idx_row行的数据
-                row_data_err_null_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_calc_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_dupl_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_vali_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_ssmc_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpi_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_brand_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_team_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_carl_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_life_fcst = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpin_fcst = []  # 临时存放错误的idx_row行的数据
+                row_data_err = []  # 临时存放错误的idx_row行的数据
+                row_data_exceptions = ""
                 if is_release_gap_task(df_asp, header_std, idx_row):
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
@@ -611,71 +613,43 @@ for file_idx in range(len(file_writeable_name)):
                 else:
                     # 判断idx_row的前两列是否为空
                     if not is_null(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_null_fcst,
-                                               data_err_fcst,
-                                               'Issue/Dept Null Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue/Dept Null Exception & '
                     if not is_carline(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_carl_fcst,
-                                               data_err_fcst,
-                                               'Carline Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Carline Exception & '
                     if not is_life_cycle(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_life_fcst,
-                                               data_err_fcst,
-                                               'Lifecycle Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Lifecycle Exception & '
                     # 判断idx_row的12个月的budget计算总和是否和Total Budget列相等
                     if not calc_total_budget(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_calc_fcst,
-                                               data_err_fcst,
-                                               'TotalBudget Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Budget Exception & '
                     if not is_branding(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_brand_fcst,
-                                               data_err_fcst,
-                                               'Branding/NonBranding Exception', idx_row)
-                    if not is_num_kpi(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
-                                               data_err_fcst,
-                                               'KPI Prospects Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
-                                               data_err_fcst,
-                                               'KPI Leads Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
-                                               data_err_fcst,
-                                               'KPI Inquiry Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_fcst,
-                                               data_err_fcst,
-                                               'KPI Order Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Branding/NonBranding Exception & '
                     if not is_duplicate(df_asp, idx_row, issue_fcst_list, issue_actual_list, issue_budget_list):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_dupl_fcst,
-                                               data_err_fcst,
-                                               'Issue Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue Exception & '
                     # 判断idx_row的Working/NonWorking列与某几列的关联关系是否符合标准
+                    if not is_num_kpi(df_asp, header_std, idx_row)[0]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Prospects Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Leads Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Inquiry Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Order Exception & '
                     if not validate_team(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_team_fcst,
-                                               data_err_fcst,
-                                               'Team Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Team Exception & '
                     if not validate(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
-                                               data_err_fcst,
-                                               'Sale Funnel Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Sale Funnel Exception & '
                     elif not validate(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
-                                               data_err_fcst,
-                                               'Category Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Category Exception & '
                     elif not validate(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_fcst,
-                                               data_err_fcst,
-                                               'Activity Type Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Activity Type Exception & '
                     if not is_ssm(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_ssmc_fcst,
-                                               data_err_fcst,
-                                               'SMM Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'SMM Exception & '
                     if not validate_kpi(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpi_fcst,
-                                               data_err_fcst,
-                                               'KPI Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Exception & '
+                    if row_data_exceptions != "":
+                        row_data_exceptions = row_data_exceptions[:-3]
+                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err, data_err_fcst,
+                                               row_data_exceptions, idx_row)
                     # 符合所有标准的数据格式化后写入Summary文件
                     if is_null(df_asp, header_std, idx_row) and calc_total_budget(df_asp, header_std, idx_row) \
                             and is_branding(df_asp, header_std, idx_row) and validate(df_asp, header_std, idx_row)[0] \
@@ -696,17 +670,8 @@ for file_idx in range(len(file_writeable_name)):
                         data_new_fcst.append(row_data)
             if is_actual(df_asp, header_std, idx_row, issue_actual_list):
                 row_data = []  # 临时存放符合标准的idx_row行的数据
-                row_data_err_null = []  # 临时存放错误的idx_row行的数据
-                row_data_err_calc = []  # 临时存放错误的idx_row行的数据
-                row_data_err_dupl = []  # 临时存放错误的idx_row行的数据
-                row_data_err_vali = []  # 临时存放错误的idx_row行的数据
-                row_data_err_ssmc = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpi = []  # 临时存放错误的idx_row行的数据
-                row_data_err_brand = []  # 临时存放错误的idx_row行的数据
-                row_data_err_team = []  # 临时存放错误的idx_row行的数据
-                row_data_err_carl = []  # 临时存放错误的idx_row行的数据
-                row_data_err_life = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpin = []  # 临时存放错误的idx_row行的数据
+                row_data_err = []  # 临时存放错误的idx_row行的数据
+                row_data_exceptions = ""
                 if is_release_gap_task(df_asp, header_std, idx_row):
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
@@ -719,71 +684,43 @@ for file_idx in range(len(file_writeable_name)):
                 else:
                     # 判断idx_row的前两列是否为空
                     if not is_null(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_null,
-                                               data_err_actual,
-                                               'Issue/Dept Null Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue/Dept Null Exception & '
                     if not is_carline(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_carl,
-                                               data_err_actual,
-                                               'Carline Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Carline Exception & '
                     if not is_life_cycle(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_life,
-                                               data_err_actual,
-                                               'Lifecycle Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Lifecycle Exception & '
                     # 判断idx_row的12个月的budget计算总和是否和Total Budget列相等
                     if not calc_total_budget(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_calc,
-                                               data_err_actual,
-                                               'Budget Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Budget Exception & '
                     if not is_branding(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_brand,
-                                               data_err_actual,
-                                               'Branding/NonBranding Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Branding/NonBranding Exception & '
                     if not is_duplicate(df_asp, idx_row, issue_fcst_list, issue_actual_list, issue_budget_list):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_dupl,
-                                               data_err_actual,
-                                               'Issue Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue Exception & '
                     # 判断idx_row的Working/NonWorking列与某几列的关联关系是否符合标准
                     if not is_num_kpi(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin,
-                                               data_err_actual,
-                                               'KPI Prospects Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Prospects Exception & '
                     elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin,
-                                               data_err_actual,
-                                               'KPI Leads Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Leads Exception & '
                     elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin,
-                                               data_err_actual,
-                                               'KPI Inquiry Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Inquiry Exception & '
                     elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin,
-                                               data_err_actual,
-                                               'KPI Order Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Order Exception & '
                     if not validate_team(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_team,
-                                               data_err_actual,
-                                               'Team Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Team Exception & '
                     if not validate(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali,
-                                               data_err_actual,
-                                               'Sale Funnel Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Sale Funnel Exception & '
                     elif not validate(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali,
-                                               data_err_actual,
-                                               'Category Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Category Exception & '
                     elif not validate(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali,
-                                               data_err_actual,
-                                               'Activity Type Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Activity Type Exception & '
                     if not is_ssm(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_ssmc,
-                                               data_err_actual,
-                                               'SMM Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'SMM Exception & '
                     if not validate_kpi(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpi,
-                                               data_err_actual,
-                                               'KPI Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Exception & '
+                    if row_data_exceptions != "":
+                        row_data_exceptions = row_data_exceptions[:-3]
+                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err, data_err_actual,
+                                               row_data_exceptions, idx_row)
                     # 符合所有标准的数据格式化后写入Summary文件
                     if is_null(df_asp, header_std, idx_row) and calc_total_budget(df_asp, header_std, idx_row) \
                             and is_branding(df_asp, header_std, idx_row) and validate(df_asp, header_std, idx_row)[0] \
@@ -804,17 +741,8 @@ for file_idx in range(len(file_writeable_name)):
                         data_new_actual.append(row_data)
             if is_budget(df_asp, header_std, idx_row, issue_budget_list):
                 row_data = []  # 临时存放符合标准的idx_row行的数据
-                row_data_err_null_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_calc_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_dupl_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_vali_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_ssmc_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpi_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_brand_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_team_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_carl_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_life_bgt = []  # 临时存放错误的idx_row行的数据
-                row_data_err_kpin_bgt = []  # 临时存放错误的idx_row行的数据
+                row_data_err = []  # 临时存放错误的idx_row行的数据
+                row_data_exceptions = ""
                 if is_release_gap_task(df_asp, header_std, idx_row):
                     for idx_col in range(len(header_std)):
                         row_data.append(df_asp[header_std[idx_col]][idx_row])
@@ -827,71 +755,43 @@ for file_idx in range(len(file_writeable_name)):
                 else:
                     # 判断idx_row的前两列是否为空
                     if not is_null(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_null_bgt,
-                                               data_err_bgt,
-                                               'Issue/Dept Null Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue/Dept Null Exception & '
                     if not is_carline(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_carl_bgt,
-                                               data_err_bgt,
-                                               'Carline Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Carline Exception & '
                     if not is_life_cycle(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_life_bgt,
-                                               data_err_bgt,
-                                               'Lifecycle Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Lifecycle Exception & '
                     # 判断idx_row的12个月的budget计算总和是否和Total Budget列相等
                     if not calc_total_budget(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_calc_bgt,
-                                               data_err_bgt,
-                                               'TotalBudget Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Budget Exception & '
                     if not is_branding(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_brand_bgt,
-                                               data_err_bgt,
-                                               'Branding/NonBranding Exception', idx_row)
-                    if not is_num_kpi(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_bgt,
-                                               data_err_bgt,
-                                               'KPI Prospects Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_bgt,
-                                               data_err_bgt,
-                                               'KPI Leads Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_bgt,
-                                               data_err_bgt,
-                                               'KPI Inquiry Exception', idx_row)
-                    elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpin_bgt,
-                                               data_err_bgt,
-                                               'KPI Order Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Branding/NonBranding Exception & '
                     if not is_duplicate(df_asp, idx_row, issue_fcst_list, issue_actual_list, issue_budget_list):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_dupl_bgt,
-                                               data_err_bgt,
-                                               'Issue Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Issue Exception & '
                     # 判断idx_row的Working/NonWorking列与某几列的关联关系是否符合标准
+                    if not is_num_kpi(df_asp, header_std, idx_row)[0]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Prospects Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[1]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Leads Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[2]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Inquiry Exception & '
+                    elif not is_num_kpi(df_asp, header_std, idx_row)[3]:
+                        row_data_exceptions = row_data_exceptions + 'KPI Order Exception & '
                     if not validate_team(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_team_bgt,
-                                               data_err_bgt,
-                                               'Team Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Team Exception & '
                     if not validate(df_asp, header_std, idx_row)[0]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_bgt,
-                                               data_err_bgt,
-                                               'Sale Funnel Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Sale Funnel Exception & '
                     elif not validate(df_asp, header_std, idx_row)[1]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_bgt,
-                                               data_err_bgt,
-                                               'Category Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Category Exception & '
                     elif not validate(df_asp, header_std, idx_row)[2]:
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_vali_bgt,
-                                               data_err_bgt,
-                                               'Activity Type Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'Activity Type Exception & '
                     if not is_ssm(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_ssmc_bgt,
-                                               data_err_bgt,
-                                               'SMM Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'SMM Exception & '
                     if not validate_kpi(df_asp, header_std, idx_row):
-                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err_kpi_bgt,
-                                               data_err_bgt,
-                                               'KPI Exception', idx_row)
+                        row_data_exceptions = row_data_exceptions + 'KPI Exception & '
+                    if row_data_exceptions != "":
+                        row_data_exceptions = row_data_exceptions[:-3]
+                        add_error_log_and_data(file_writeable_name[file_idx], df_asp, header_std, row_data_err,
+                                               data_err_bgt, row_data_exceptions, idx_row)
                     # 符合所有标准的数据格式化后写入Summary文件
                     if is_null(df_asp, header_std, idx_row) and calc_total_budget(df_asp, header_std, idx_row) \
                             and is_branding(df_asp, header_std, idx_row) and validate(df_asp, header_std, idx_row)[0] \
@@ -908,7 +808,6 @@ for file_idx in range(len(file_writeable_name)):
                         row_data.append(calc_q_budget(df_asp, header_std, idx_row)[1])
                         row_data.append(calc_q_budget(df_asp, header_std, idx_row)[2])
                         row_data.append(calc_q_budget(df_asp, header_std, idx_row)[3])
-                        # row_data.append(calc_ytd_budget(df_asp, header_std, idx_row, cur_month))
                         data_new_bgt.append(row_data)
 # 将header异常数据写入Error excel
 write_to_excel(data_err_header, err_header_err, writer_err_header, [0, 1], [], [])
@@ -924,10 +823,10 @@ write_to_excel(data_new_actual, header_std_plus, writer_new_actual, [], [15, 16,
 write_to_excel(data_new_fcst, header_std_plus, writer_new_fcst, [], [15, 16, 19, 32], [17, 18])
 # 将Budget标准数据写入Error excel
 write_to_excel(data_new_bgt, header_std_plus, writer_new_bgt, [], [15, 16, 19, 32], [17, 18])
-
+show_time(start)
 os.chmod(file_new_actual, stat.S_IREAD)
 os.chmod(file_new_fcst, stat.S_IREAD)
 os.chmod(file_new_bgt, stat.S_IREAD)
-cost = time.time() - start
-print(str(int(cost)) + "s")
+os.system('cls')
+print("The program has ended. The program runs for a total of %.2fseconds" % (time.time() - start))
 os.system("pause")

@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/com.xinpeng/test/test.py" line="62" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeam.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/volvo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/volvo.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/test/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,110 +25,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#112#176#0" />
-                <element signature="e#217#353#0" />
-                <element signature="e#393#863#0" />
-                <element signature="e#531#844#0" />
-                <element signature="e#945#1029#0" />
-                <element signature="e#1073#1238#0" />
-                <element signature="e#1136#1220#0" />
-                <element signature="e#1539#1698#0" />
-                <element signature="e#1742#1896#0" />
-                <element signature="e#1941#2081#0" />
-                <element signature="e#2132#2488#0" />
-                <element signature="e#2180#2306#0" />
-                <element signature="e#2535#3573#0" />
-                <element signature="e#2636#2768#0" />
-                <element signature="e#2807#2939#0" />
-                <element signature="e#2978#3110#0" />
-                <element signature="e#3149#3281#0" />
-                <element signature="e#3629#3885#0" />
-                <element signature="e#3680#3806#0" />
-                <element signature="e#3915#4047#0" />
-                <element signature="e#4094#4381#0" />
-                <element signature="e#4205#4359#0" />
-                <element signature="e#4423#5777#0" />
-                <element signature="e#4763#5179#0" />
-                <element signature="e#4971#5179#0" />
-                <element signature="e#5350#5714#0" />
-                <element signature="e#5509#5714#0" />
-                <element signature="e#5823#6644#0" />
-                <element signature="e#6647#6691#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8108">
-              <caret line="710" column="45" selection-start-line="710" selection-start-column="45" selection-end-line="710" selection-end-column="45" />
-              <folding>
-                <element signature="e#135#199#0" />
-                <element signature="e#240#376#0" />
-                <element signature="e#913#1070#0" />
-                <element signature="e#968#1052#0" />
-                <element signature="e#1096#1261#0" />
-                <element signature="e#1159#1243#0" />
-                <element signature="e#1296#1530#0" />
-                <element signature="e#1428#1512#0" />
-                <element signature="e#2170#2526#0" />
-                <element signature="e#2218#2344#0" />
-                <element signature="e#2573#3611#0" />
-                <element signature="e#2674#2806#0" />
-                <element signature="e#2845#2977#0" />
-                <element signature="e#3016#3148#0" />
-                <element signature="e#3187#3319#0" />
-                <element signature="e#3667#3923#0" />
-                <element signature="e#3718#3844#0" />
-                <element signature="e#3961#4250#0" />
-                <element signature="e#4076#4233#0" />
-                <element signature="e#4297#4584#0" />
-                <element signature="e#4408#4562#0" />
-                <element signature="e#5174#5382#0" />
-                <element signature="e#6026#6847#0" />
-                <element signature="e#6910#7112#0" />
-                <element signature="e#7137#7367#0" />
-                <element signature="e#7150#7178#0" />
-                <element signature="e#7232#7301#0" />
-                <element signature="e#7411#7888#0" />
-                <element signature="e#7939#8250#0" />
-                <element signature="e#7971#8250#0" />
-                <element signature="e#8299#8591#0" />
-                <element signature="e#8331#8591#0" />
-                <element signature="e#8392#8591#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8671">
-              <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="447" column="9" lean-forward="true" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
+            <state relative-caret-position="303">
+              <caret line="807" column="95" lean-forward="true" selection-start-line="807" selection-start-column="95" selection-end-line="807" selection-end-column="95" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#11241#11464#0" />
+                <element signature="e#11510#11733#0" />
+                <element signature="e#11779#11998#0" />
+                <element signature="e#12043#12266#0" />
+                <element signature="e#12308#12343#0" />
+                <element signature="e#12840#12921#0" />
+                <element signature="e#13926#14145#0" />
+                <element signature="e#13975#14145#0" />
+                <element signature="e#14021#14145#0" />
+                <element signature="e#14202#14444#0" />
+                <element signature="e#14251#14444#0" />
+                <element signature="e#14297#14444#0" />
               </folding>
             </state>
           </provider>
@@ -126,10 +52,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14036">
-              <caret line="484" selection-start-line="484" selection-end-line="484" />
+            <state relative-caret-position="-8455">
+              <caret line="515" column="25" selection-start-line="515" selection-start-column="25" selection-end-line="515" selection-end-column="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="104" column="12" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="84" />
+              <folding>
+                <element signature="e#1354#1363#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,12 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&quot;D:/ASP - Erin/Raw Data/&quot;</find>
-      <find>&quot;D:/ASP - Erin/FCST/Data&amp;Log/&quot;</find>
-      <find>&quot;D:/ASP - Erin/Actual/Data&amp;Log/&quot;</find>
-      <find>&quot;D:/ASP - Erin/Header Error/Files/&quot;</find>
-      <find>D:/ASP - Erin/</find>
-      <find>320</find>
       <find>24</find>
       <find>[col_idx + 24</find>
       <find>col_idx + 28</find>
@@ -176,6 +120,12 @@
       <find>file_name</find>
       <find>file_writeable_name</find>
       <find>print</find>
+      <find>|</find>
+      <find>Dept-Team</find>
+      <find>folder_path + &quot;</find>
+      <find>show_time(start)</find>
+      <find>Dept-Team/</find>
+      <find>folder_path + &quot;Result/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,8 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/com.xinpeng/test/Test.py" />
-        <option value="$PROJECT_DIR$/com.xinpeng/test.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/ExcelProcessing.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/ExcelProcessingV2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/utils/StandardMapping.py" />
@@ -225,7 +173,6 @@
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainV1.0.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py" />
-        <option value="$PROJECT_DIR$/com.xinpeng/test/test.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py" />
@@ -234,16 +181,19 @@
         <option value="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.3.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/test/test.py" />
+        <option value="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.3.py" />
         <option value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1902" />
-    <option name="y" value="90" />
-    <option name="width" value="1937" />
-    <option name="height" value="1055" />
+    <option name="x" value="1631" />
+    <option name="y" value="15" />
+    <option name="width" value="1936" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -271,6 +221,12 @@
               <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
               <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
               <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+              <item name="asp-dept" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -279,6 +235,18 @@
               <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+              <item name="rechecking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="excel-volvo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="excel-volvo" type="462c0819:PsiDirectoryNode" />
+              <item name="com.xinpeng" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,18 +261,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\main" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\udf" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\test" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\rechecking" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp dept" />
-      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\rechecking" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\main" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp dept" />
+      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\rechecking" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\pack" />
       <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp" />
-      <recent name="C:\Users\xinplv\PycharmProjects\excel-volvo\com.xinpeng\asp dept" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -319,8 +287,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ASPReCheckingLocalV1.3">
-    <configuration name="ASPMainLocalV1.2.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="ASPDataByDeptTeamV1.3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="excel-volvo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,11 +296,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/asp dept" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -362,27 +330,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ASPReCheckingLocalV1.2.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="excel-volvo" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/rechecking" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="ASPReCheckingLocalV1.3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="excel-volvo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -396,6 +343,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="excel-volvo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com.xinpeng/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com.xinpeng/test/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -427,11 +395,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ASPReCheckingLocalV1.3" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.ASPMainLocalV1.3" />
+        <item itemvalue="Python.ASPDataByDeptTeamV1.3" />
+        <item itemvalue="Python.ASPReCheckingLocalV1.3" />
         <item itemvalue="Python.test_excel" />
-        <item itemvalue="Python.ASPMainLocalV1.2.2" />
-        <item itemvalue="Python.ASPReCheckingLocalV1.2.2" />
       </list>
     </recent_temporary>
   </component>
@@ -516,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572586733261</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="最终版">
+      <created>1572919193474</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572919193474</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -537,13 +512,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928312" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854398" weight="0.3566058" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49854398" weight="0.3716434" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39957035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.35123524" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44683138" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501456" side_tool="true" weight="0.3620899" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32867885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -561,263 +536,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="最终版" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeam.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-625">
-          <caret line="139" column="38" selection-start-line="139" selection-start-column="38" selection-end-line="139" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="282" column="54" selection-start-line="282" selection-start-column="54" selection-end-line="282" selection-end-column="54" />
-          <folding>
-            <element signature="e#84#148#0" />
-            <element signature="e#177#331#0" />
-            <element signature="e#13451#13911#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="269" column="43" lean-forward="true" selection-start-line="269" selection-start-column="43" selection-end-line="269" selection-end-column="43" />
-          <folding>
-            <element signature="e#84#148#0" />
-            <element signature="e#177#331#0" />
-            <element signature="e#370#1534#0" />
-            <element signature="e#418#1182#0" />
-            <element signature="e#488#565#0" />
-            <element signature="e#663#740#0" />
-            <element signature="e#855#932#0" />
-            <element signature="e#1016#1093#0" />
-            <element signature="e#1379#1392#0" />
-            <element signature="e#1564#4595#0" />
-            <element signature="e#1698#1727#0" />
-            <element signature="e#1737#3052#0" />
-            <element signature="e#1779#2027#0" />
-            <element signature="e#2041#3052#0" />
-            <element signature="e#2083#3016#0" />
-            <element signature="e#3228#4573#0" />
-            <element signature="e#3270#3503#0" />
-            <element signature="e#3517#4573#0" />
-            <element signature="e#3559#4537#0" />
-            <element signature="e#4637#4867#0" />
-            <element signature="e#4906#5266#0" />
-            <element signature="e#4938#5266#0" />
-            <element signature="e#5307#5513#0" />
-            <element signature="e#5338#5513#0" />
-            <element signature="e#5559#5931#0" />
-            <element signature="e#5637#5758#0" />
-            <element signature="e#5810#5931#0" />
-            <element signature="e#7028#7134#0" />
-            <element signature="e#7167#7307#0" />
-            <element signature="e#7347#7460#0" />
-            <element signature="e#7536#10570#0" />
-            <element signature="e#7759#7982#0" />
-            <element signature="e#8028#8251#0" />
-            <element signature="e#8297#8516#0" />
-            <element signature="e#8561#8784#0" />
-            <element signature="e#8826#8861#0" />
-            <element signature="e#8991#9353#0" />
-            <element signature="e#9358#9439#0" />
-            <element signature="e#9540#9854#0" />
-            <element signature="e#9916#10497#0" />
-            <element signature="e#9976#10208#0" />
-            <element signature="e#10025#10208#0" />
-            <element signature="e#10084#10208#0" />
-            <element signature="e#10265#10497#0" />
-            <element signature="e#10314#10497#0" />
-            <element signature="e#10373#10497#0" />
-            <element signature="e#10502#10511#0" />
-            <element signature="e#10657#10985#0" />
-            <element signature="e#10858#10951#0" />
-            <element signature="e#11040#11519#0" />
-            <element signature="e#11552#12057#0" />
-            <element signature="e#13867#14022#0" />
-            <element signature="e#14459#14603#0" />
-            <element signature="e#15197#15344#0" />
-            <element signature="e#16309#16814#0" />
-            <element signature="e#17069#17570#0" />
-            <element signature="e#17781#18287#0" />
-            <element signature="e#18529#18990#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2320">
-          <caret line="289" column="38" lean-forward="true" selection-start-line="289" selection-start-column="38" selection-end-line="289" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV7.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="364" column="19" selection-start-line="364" selection-start-column="19" selection-end-line="364" selection-end-column="19" />
-          <folding>
-            <element signature="e#84#148#0" />
-            <element signature="e#177#331#0" />
-            <element signature="e#370#1534#0" />
-            <element signature="e#418#1182#0" />
-            <element signature="e#488#565#0" />
-            <element signature="e#663#740#0" />
-            <element signature="e#855#932#0" />
-            <element signature="e#1016#1093#0" />
-            <element signature="e#1564#4595#0" />
-            <element signature="e#1737#3052#0" />
-            <element signature="e#1779#2027#0" />
-            <element signature="e#2041#3052#0" />
-            <element signature="e#2083#3016#0" />
-            <element signature="e#3228#4573#0" />
-            <element signature="e#3270#3503#0" />
-            <element signature="e#3517#4573#0" />
-            <element signature="e#3559#4537#0" />
-            <element signature="e#4637#4867#0" />
-            <element signature="e#4906#5266#0" />
-            <element signature="e#4938#5266#0" />
-            <element signature="e#5307#5513#0" />
-            <element signature="e#5338#5513#0" />
-            <element signature="e#5559#5968#0" />
-            <element signature="e#5637#5758#0" />
-            <element signature="e#5847#5968#0" />
-            <element signature="e#6014#6382#0" />
-            <element signature="e#6084#6209#0" />
-            <element signature="e#6244#6301#0" />
-            <element signature="e#6422#6528#0" />
-            <element signature="e#6561#6701#0" />
-            <element signature="e#6741#6854#0" />
-            <element signature="e#6930#9964#0" />
-            <element signature="e#7153#7376#0" />
-            <element signature="e#7422#7645#0" />
-            <element signature="e#7691#7910#0" />
-            <element signature="e#7955#8178#0" />
-            <element signature="e#8220#8255#0" />
-            <element signature="e#8385#8747#0" />
-            <element signature="e#8752#8833#0" />
-            <element signature="e#8934#9248#0" />
-            <element signature="e#9310#9891#0" />
-            <element signature="e#9370#9602#0" />
-            <element signature="e#9419#9602#0" />
-            <element signature="e#9478#9602#0" />
-            <element signature="e#9659#9891#0" />
-            <element signature="e#9708#9891#0" />
-            <element signature="e#9767#9891#0" />
-            <element signature="e#9896#9905#0" />
-            <element signature="e#10051#10420#0" />
-            <element signature="e#10252#10386#0" />
-            <element signature="e#10475#10954#0" />
-            <element signature="e#10987#11492#0" />
-            <element signature="e#14710#14865#0" />
-            <element signature="e#15050#20170#0" />
-            <element signature="e#15409#15557#0" />
-            <element signature="e#13901#14045#0" />
-            <element signature="e#16187#16338#0" />
-            <element signature="e#19505#20170#0" />
-            <element signature="e#19631#20124#0" />
-            <element signature="e#20556#20709#0" />
-            <element signature="e#20845#20994#0" />
-            <element signature="e#16232#16388#0" />
-            <element signature="e#16474#17081#0" />
-            <element signature="e#24778#25271#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp/ASPDataV8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-553">
-          <caret line="341" column="18" lean-forward="true" selection-start-line="341" selection-start-column="18" selection-end-line="341" selection-end-column="18" />
-          <folding>
-            <element signature="e#100#164#0" />
-            <element signature="e#193#347#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="e#304#555#0" />
-            <element signature="e#562#798#0" />
-            <element signature="e#816#1001#0" />
-            <element signature="e#1012#1186#0" />
-            <element signature="e#1511#15332#0" />
-            <element signature="e#1989#2592#0" />
-            <element signature="e#2022#2295#0" />
-            <element signature="e#2138#2191#0" />
-            <element signature="e#2242#2295#0" />
-            <element signature="e#2337#2506#0" />
-            <element signature="e#2453#2506#0" />
-            <element signature="e#2548#2592#0" />
-            <element signature="e#2920#7349#0" />
-            <element signature="e#3743#3844#0" />
-            <element signature="e#3871#7313#0" />
-            <element signature="e#4191#4300#0" />
-            <element signature="e#4386#4506#0" />
-            <element signature="e#4591#5829#0" />
-            <element signature="e#4673#4801#0" />
-            <element signature="e#4938#5088#0" />
-            <element signature="e#5298#5470#0" />
-            <element signature="e#5679#5829#0" />
-            <element signature="e#5976#6096#0" />
-            <element signature="e#6301#6443#0" />
-            <element signature="e#6647#6778#0" />
-            <element signature="e#6926#7046#0" />
-            <element signature="e#7193#7313#0" />
-            <element signature="e#7431#11895#0" />
-            <element signature="e#7674#7802#0" />
-            <element signature="e#8325#8426#0" />
-            <element signature="e#8453#11895#0" />
-            <element signature="e#8773#8882#0" />
-            <element signature="e#8968#9088#0" />
-            <element signature="e#9173#10411#0" />
-            <element signature="e#9255#9383#0" />
-            <element signature="e#9520#9670#0" />
-            <element signature="e#9880#10052#0" />
-            <element signature="e#10261#10411#0" />
-            <element signature="e#10558#10678#0" />
-            <element signature="e#10883#11025#0" />
-            <element signature="e#11229#11360#0" />
-            <element signature="e#11508#11628#0" />
-            <element signature="e#11775#11895#0" />
-            <element signature="e#12339#13766#0" />
-            <element signature="e#12374#12860#0" />
-            <element signature="e#12571#12742#0" />
-            <element signature="e#12777#12860#0" />
-            <element signature="e#13000#13450#0" />
-            <element signature="e#13193#13332#0" />
-            <element signature="e#13367#13450#0" />
-            <element signature="e#13563#13706#0" />
-            <element signature="e#13848#15332#0" />
-            <element signature="e#13883#14398#0" />
-            <element signature="e#14084#14280#0" />
-            <element signature="e#14315#14398#0" />
-            <element signature="e#14538#14996#0" />
-            <element signature="e#14735#14878#0" />
-            <element signature="e#14913#14996#0" />
-            <element signature="e#15113#15260#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/msilib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7490">
-          <caret line="202" column="8" selection-start-line="202" selection-start-column="8" selection-end-line="202" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/Volvo2.png" />
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/Volvo.png" />
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/test/TestFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-762">
@@ -889,7 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.2.py">
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7076">
           <caret line="249" column="90" selection-start-line="10" selection-end-line="249" selection-end-column="90" />
@@ -899,7 +617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp dept/ASPDataByDeptTeamV1.1.py">
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="242" column="55" selection-start-line="242" selection-start-column="55" selection-end-line="242" selection-end-column="55" />
@@ -914,13 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="410">
           <caret line="235" column="66" lean-forward="true" selection-start-line="228" selection-start-column="4" selection-end-line="235" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/nt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="423" column="7" lean-forward="true" selection-start-line="417" selection-start-column="4" selection-end-line="423" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1455,13 +1166,6 @@
             <element signature="e#12687#12882#0" />
             <element signature="e#12993#13151#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -2675,6 +2379,13 @@
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/sys.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4241">
+          <caret line="289" column="38" lean-forward="true" selection-start-line="289" selection-start-column="38" selection-end-line="289" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="725">
@@ -2714,29 +2425,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8671">
-          <caret line="314" column="14" selection-start-line="314" selection-start-column="14" selection-end-line="314" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14036">
-          <caret line="484" selection-start-line="484" selection-end-line="484" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8108">
+        <state relative-caret-position="16124">
           <caret line="710" column="45" selection-start-line="710" selection-start-column="45" selection-end-line="710" selection-end-column="45" />
           <folding>
             <element signature="e#135#199#0" />
@@ -2776,12 +2467,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py">
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test_excel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="447" column="9" lean-forward="true" selection-start-line="447" selection-start-column="9" selection-end-line="447" selection-end-column="9" />
+        <state relative-caret-position="58">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/Free-Converter.com-volvo-5305049.ico" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo2.ico" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo.png" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo_logo_scaled_Euf_icon.ico" />
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/volvo.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="593" column="31" lean-forward="true" selection-start-line="593" selection-start-column="31" selection-end-line="593" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="1150" column="8" selection-start-line="1150" selection-start-column="8" selection-end-line="1150" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="172" column="4" selection-start-line="172" selection-start-column="4" selection-end-line="172" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/datetime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="936" column="20" selection-start-line="936" selection-start-column="20" selection-end-line="936" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/test/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="104" column="12" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="84" />
+          <folding>
+            <element signature="e#1354#1363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="2216" column="8" selection-start-line="2216" selection-start-column="8" selection-end-line="2216" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8455">
+          <caret line="515" column="25" selection-start-line="515" selection-start-column="25" selection-end-line="515" selection-end-column="25" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="807" column="95" lean-forward="true" selection-start-line="807" selection-start-column="95" selection-end-line="807" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#11241#11464#0" />
+            <element signature="e#11510#11733#0" />
+            <element signature="e#11779#11998#0" />
+            <element signature="e#12043#12266#0" />
+            <element signature="e#12308#12343#0" />
+            <element signature="e#12840#12921#0" />
+            <element signature="e#13926#14145#0" />
+            <element signature="e#13975#14145#0" />
+            <element signature="e#14021#14145#0" />
+            <element signature="e#14202#14444#0" />
+            <element signature="e#14251#14444#0" />
+            <element signature="e#14297#14444#0" />
           </folding>
         </state>
       </provider>
