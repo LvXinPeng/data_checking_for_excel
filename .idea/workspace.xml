@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeam.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/parsing/ASPParsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp-dept/ASPDataByDeptTeamV2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPData.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV5.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV6.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV7.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/asp/ASPDataV9.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/core/ExcelProcessingV4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMain.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV0.2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPFirstCheckingBeta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainLocalV1.3.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/main/ASPFirstChecking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/ASPMainV1.0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/main/volvo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/img/volvo.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/pack/PackFiles.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/pack/PackFilesLocal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReChecking.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReChecking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.0.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPRecheckingBeta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/rechecking/ASPReCheckingLocalV1.3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/TestFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/test/test_excel.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/udf/UDF.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/udf/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/utils/StandardMapping.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.xinpeng/utils/StardardMappingV3.py" beforeDir="false" />
-    </list>
+    <list default="true" id="f0d0b5df-fa24-4347-ae5c-441c05cfc988" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPFirstChecking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="521" column="26" lean-forward="true" selection-start-line="521" selection-start-column="26" selection-end-line="521" selection-end-column="26" />
+            <state relative-caret-position="-10615">
+              <caret line="481" lean-forward="true" selection-start-line="481" selection-end-line="481" />
               <folding>
                 <element signature="e#13980#17829#0" />
               </folding>
@@ -71,10 +22,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPRechecking.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
+            <state relative-caret-position="-8368">
               <caret line="517" column="38" selection-start-line="517" selection-start-column="38" selection-end-line="517" selection-end-column="38" />
             </state>
           </provider>
@@ -386,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576479164210</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="restructure">
+      <created>1577088679982</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1577088679983</updated>
+    </task>
+    <task id="LOCAL-00015" summary="restructure">
+      <created>1577089990831</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1577089990832</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -400,6 +365,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1753" height="1062" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19103087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -429,7 +395,8 @@
     <MESSAGE value="最终版" />
     <MESSAGE value="增加【行去重】" />
     <MESSAGE value="mixed parsing function" />
-    <option name="LAST_COMMIT_MESSAGE" value="mixed parsing function" />
+    <MESSAGE value="restructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="restructure" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/com.xinpeng/udf/__init__.py">
@@ -1994,13 +1961,6 @@
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="325" column="37" lean-forward="true" selection-start-line="325" selection-start-column="37" selection-end-line="325" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/core/indexes/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -2135,13 +2095,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPRechecking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="517" column="38" selection-start-line="517" selection-start-column="38" selection-end-line="517" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPFirstCheckingBeta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -2199,13 +2152,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/849177377/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117361">
+          <caret line="5100" column="8" selection-start-line="5100" selection-start-column="8" selection-end-line="5100" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.xinpeng/main/ASPFirstChecking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="521" column="26" lean-forward="true" selection-start-line="521" selection-start-column="26" selection-end-line="521" selection-end-column="26" />
+        <state relative-caret-position="-10615">
+          <caret line="481" lean-forward="true" selection-start-line="481" selection-end-line="481" />
           <folding>
             <element signature="e#13980#17829#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.xinpeng/rechecking/ASPRechecking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8368">
+          <caret line="517" column="38" selection-start-line="517" selection-start-column="38" selection-end-line="517" selection-end-column="38" />
         </state>
       </provider>
     </entry>
