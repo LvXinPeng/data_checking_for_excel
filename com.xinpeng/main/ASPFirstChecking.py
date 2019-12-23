@@ -1,5 +1,3 @@
-import traceback
-
 try:
     import datetime
     import time
@@ -452,7 +450,6 @@ try:
 
     def show_time(start_time):
         print("The program is running and it has been running for %.2fseconds" % (time.time() - start_time))
-        # os.system('cls')
 
 
     def mk_time_dir(time_file_path):
