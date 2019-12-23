@@ -1,5 +1,3 @@
-import traceback
-
 try:
     import stat
     import time
@@ -881,8 +879,4 @@ except Exception as e:
     print("************************************")
     print(e)
     print("************************************")
-    traceback.print_exc()
-    # 或者得到堆栈字符串信息
-    # info = traceback.format_exc()
-    # print(info)
     os.system("pause")
